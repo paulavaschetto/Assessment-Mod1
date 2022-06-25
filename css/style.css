@@ -1,0 +1,270 @@
+body {
+    background: linear-gradient(342deg, #734f21, transparent);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "comfortaa";
+    margin: 0;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+/* Style the navigation menu */
+#topnav {
+    overflow: hidden;
+    background-color: #543910;
+    position: relative;
+    
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  #topnav #menuLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  #topnav a {
+    color: #F6EDE5;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  #topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    font-size: 30px;
+    align-items: center;
+}
+  
+  #topnav a.bag_icon{ 
+    position: absolute;
+    float: right;
+    margin: auto;
+    top: -1px;
+    right: 2px;
+    font-size: 28px;
+  }
+
+  #menuLinks a:hover, #topnav a.bag_icon:hover, #topnav a.icon{
+   background-color:#412905d0;
+  }
+
+  #bc {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  #bc a{
+    text-decoration: none;
+  }
+ 
+  .container{
+    position: relative;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+  }
+
+.categories{
+    text-decoration: none;
+    font-size: 4vw;
+    display: flex;
+    text-align: center;
+    position: relative;
+    height: 40vh;
+    min-height: 400px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+    
+
+.categoryTitle{
+    position: relative;
+    background-color: #543910ae;
+    color: #F6EDE5;
+    margin: auto;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+
+.container .categories img{
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+}
+
+@media screen and (max-width: 800px){
+    .categories{
+        height: 30vh;
+        font-size: 15px;
+        min-height: 150px;
+    }
+    .container{
+        width: 90%;
+    }
+    .container .categories img{
+        min-height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    .categories{
+        font-size: 30px;
+    }
+    .categoryTitle{
+        width: 50%;
+    }
+}
+/* COFFEE MENU PAGE */
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  /* Dropdown Button */
+.dropbtn {
+    background-color: #CCC0B6;
+    color: #371E08;
+    padding: 16px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: comfortaa;
+    border-radius: 5px;
+   
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #dccec2;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content option {
+    color: #371E08;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+ 
+  }
+
+.dropdown-content option:hover 
+   {background-color: #dccec2}
+
+.coffee-card{
+    border: #371E08;
+    border-width: 0.5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.coffee-card img{
+    width: 100%;
+
+}
+
+.add-to-cart{
+    background-color: #371E08;
+    padding: 15px 40px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: comfortaa;
+    font-weight: 600;
+    color: #CCC0B6;
+    border-radius: 5px;
+    
+    
+}
+
+.add-to-cart:hover {
+    opacity: 0.8;
+  }
+
+  .product-quantity {
+    position:absolute;
+    width: 10rem;
+    display: block;
+    z-index: 1;
+  }
+
+  input {
+    max-width: 2rem;
+    margin: 0;
+    padding: 0.75rem 0;
+    text-align: center;
+    border-top: 1px solid #CCC0B6;
+    border-left: 1px solid #CCC0B6;
+    border-bottom: 1px solid #CCC0B6;
+    border-right: 0;
+  }
+  
+  .quantity-selectors-container {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .quantity-selectors {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .quantity-selectors button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    border-radius: 0;
+    border: 0.5px solid #371E08;
+    background-color: #CCC0B6;
+    color: #371E08;
+  }
+  
+  .quantity-selectors button:first-child {
+    border-bottom: 0;
+  }
+  
+  .quantity-selectors button:hover {
+    cursor: pointer;
+  }
+  
+  .quantity-selectors button[disabled="disabled"] {
+    cursor: not-allowed;
+  }
+  
+  .quantity-selectors button[disabled="disabled"] span {
+    opacity: 0.5;
+  }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Coffees Msnu</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Inter:wght@100;200&family=Koulen&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9f1265a69a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="topnav">
+    <a href="../index.html">
+      <img class="logo" src="../Images/logowhitetransp.png" alt="logo" >
+      </a>
+      
+    
+     <div id="menuLinks">
+        <a href="#coffees">Coffees</a>
+        <a href="#empanadas">Empanadas</a>
+        <a href="#deals">Deals</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#about">About Us</a>
+     </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i></a>
+
+      <a href="#cart" class="bag_icon"><i class="fa-solid fa-bag-shopping"></i></a>
+
+  </div>
+   
+
+<!-- make it a link to homepage -->
+<div id="bc">
+    <a href="../index.html">Home</a> > Coffees</div>  
+
+<div class="coffee-card">   
+    <div class="card">
+        <img src="../Images/latte.jpg" alt="latte/rate">
+        <h1>Latte/Rate</h1>
+        <div class="dropdown">
+            <button class="dropbtn">Select Your Size</button>
+            <div class="dropdown-content">
+            <option value="small">Small $4.00</option>
+            <option value="Regular">Regular $4.50</option>
+            <option value="Large">Large $5.00</option>
+        </div>
+    
+       <p><div class="dropdown">
+            <button class="dropbtn">Select Your Milk</button>
+            <div class="dropdown-content">
+            <option value="normal">Normal</option>
+            <option value="light">Skimmed</option>
+            <option value="vegan">Soy</option>
+        </div></p> 
+       
+            <div class="product-quantity">
+              <input data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true"><div class="quantity-selectors-container">
+                <div class="quantity-selectors">
+                  <button type="button" class="increment-quantity" aria-label="Add one" data-direction="1">
+                      <span>&#43;</span>
+                    </button>
+                  <button type="button" class="decrement-quantity" aria-label="Subtract one" data-direction="-1" disabled="disabled"><span>&#8722;</span></button>
+                </div>
+              </div>
+            </div>
+
+
+       
+        <div><button class="add-to-cart">ADD</button></div>
+</div>
+
+<script src="../../js/index.js"></script>
+</body>
+
+
+</html>
