@@ -40,39 +40,41 @@
     <a href="../index.html">Home</a> > Coffees</div>  
 
 <div class="coffee-card">   
-    <div class="card">
         <img src="../Images/latte.jpg" alt="latte/rate">
-        <h1>Latte/Rate</h1>
+        <h1>Latte<br>Rate</h1>
+
         <div class="dropdown">
-            <button class="dropbtn">Select Your Size</button>
-            <div class="dropdown-content">
-            <option value="small">Small $4.00</option>
-            <option value="Regular">Regular $4.50</option>
-            <option value="Large">Large $5.00</option>
+            <select name="size" class="dropbtn">
+                <option value="default" selected>Select Your Size <br>/ Rahi</option>
+                <option value="small">Small $4.00</option>
+                <option value="Regular">Regular $4.50</option>
+                <option value="Large">Large $5.00</option>
+            </select>
         </div>
-    
-       <p><div class="dropdown">
-            <button class="dropbtn">Select Your Milk</button>
-            <div class="dropdown-content">
-            <option value="normal">Normal</option>
-            <option value="light">Skimmed</option>
-            <option value="vegan">Soy</option>
-        </div></p> 
-       
-            <div class="product-quantity">
-              <input data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true"><div class="quantity-selectors-container">
-                <div class="quantity-selectors">
-                  <button type="button" class="increment-quantity" aria-label="Add one" data-direction="1">
-                      <span>&#43;</span>
-                    </button>
-                  <button type="button" class="decrement-quantity" aria-label="Subtract one" data-direction="-1" disabled="disabled"><span>&#8722;</span></button>
+     <br>
+        <div class="dropdown">
+            <select name="milk" class="dropbtn">
+                <div class="dropdown-milk">
+                <option value="default" selected>Select Your Milk / Miraka</option>
+                <option value="normal">Normal</option>
+                <option value="light">Skimmed</option>
+                <option value="vegan">Soy</option>
                 </div>
-              </div>
-            </div>
+              </select>
+        </div>
+    <br>
 
+    <div class="counter">
+        <button class="down" onClick='decrement()'>-</button>
+        <h2 id="counting"></h2>
+        <button class="up" onClick='increment()'>+</button>
+       
+      </div>
+       <!-- <button class="down" onClick='decreaseCount(event, this)'>-</button>
+        <input type="text" value="0">
+        <button class="up" onClick='increaseCount(event, this)'>+</button> --> 
 
-     
-         
+    <br>  
         <div><button class="add-to-cart">ADD</button></div>
 </div>
 

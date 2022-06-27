@@ -8,52 +8,37 @@ function openMenu() {
     }
   }
 
-  /* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+//   function increaseCount(a, b) {
+//     var input = b.previousElementSibling;
+//     var value = parseInt(input.value, 10);
+//     value = isNaN(value) ? 0 : value;
+//     value++;
+//     input.value = value;
+//   }
   
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-  $("button").on("click", function(ev) {
-    var currentQty = $('input[name="quantity"]').val();
-    var qtyDirection = $(this).data("direction");
-    var newQty = 0;
-    
-    if (qtyDirection == "1") {
-      newQty = parseInt(currentQty) + 1;
-    }
-    else if (qtyDirection == "-1") {
-      newQty = parseInt(currentQty) - 1;
-    }
+//   function decreaseCount(a, b) {
+//     var input = b.nextElementSibling;
+//     var value = parseInt(input.value, 10);
+//     if (value > 0) {
+//       value = isNaN(value) ? 0 : value;
+//       value--;
+//       input.value = value;
+//     }
+//   }
+
+    //initialising a variable name data
+    var data = 0;
   
-    // make decrement disabled at 1
-    if (newQty == 1) {
-      $(".decrement-quantity").attr("disabled", "disabled");
+    //printing default value of data that is 0 in h2 tag
+    document.getElementById("counting").innerText = data;
+
+    //creation of increment function
+    function increment() {
+        data = data + 1;
+        document.getElementById("counting").innerText = data;
     }
-    
-    // remove disabled attribute on subtract
-    if (newQty > 1) {
-      $(".decrement-quantity").removeAttr("disabled");
+    //creation of decrement function
+    function decrement() {
+        data = data - 1;
+        document.getElementById("counting").innerText = data;
     }
-    
-    if (newQty > 0) {
-      newQty = newQty.toString();
-      $('input[name="quantity"]').val(newQty);
-    }
-    else {
-      $('input[name="quantity"]').val("1");
-    }
-  });
