@@ -120,7 +120,6 @@ body {
     .container .categories img{
         min-height: 200px;
     }
-
 }
 
 @media screen and (max-width: 1000px) and (min-width: 600px) {
@@ -131,6 +130,8 @@ body {
         width: 50%;
     }
 }
+
+
 /* COFFEE MENU PAGE */
 
 .coffee-card{
@@ -154,7 +155,7 @@ body {
 
 .dropdown {
     display: block;
-    width: auto;
+    width: 100%;
     position: relative;
   }
 
@@ -169,6 +170,7 @@ body {
     cursor: pointer;
     font-family: comfortaa;
     border-radius: 5px; 
+    width:60%;
   }
   
 
@@ -178,7 +180,7 @@ body {
   }
 
  
-  .counter {
+.counter {
     width: 100%;
     margin: auto;
     display: flex;
@@ -228,3 +230,12 @@ body {
 .add-to-cart:hover {
     opacity: 0.8;
   }
+
+  
+  @media screen and (max-width: 800px){
+  
+    .dropbtn{
+    font-size: 10px;
+    }
+}
+
