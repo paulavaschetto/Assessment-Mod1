@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(342deg, #76562f, transparent);
+    background: linear-gradient(to top left, #ab8960, transparent);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -8,8 +8,8 @@ body {
 }
 
 .logo{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -68,7 +68,7 @@ body {
     text-decoration: none;
   }
  
-  .container{
+.container{
     position: relative;
     margin: auto;
     width: 60%;
@@ -153,7 +153,7 @@ body {
     height:30%;
 }
 
-.dropdown {
+.dropdown{
     display: block;
     width: 100%;
     position: relative;
@@ -175,19 +175,19 @@ body {
   
 
   /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover, .dropbtn:focus{
     background-color: #dccec2;
   }
 
  
-.counter {
+.counter{
     width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.counter h2 {
+.counter h2{
     width: 40px;
     border: 0;
     line-height: 20px;
@@ -198,7 +198,7 @@ body {
     appearance: none;
     outline: 0;
 }
-.counter button {
+.counter button{
     display: block;
     font-size: 30px;
     padding: 0 10px;
@@ -227,15 +227,44 @@ body {
     border-radius: 5px;
 }
 
-.add-to-cart:hover {
+.add-to-cart:hover{
     opacity: 0.8;
   }
 
   
-  @media screen and (max-width: 800px){
+@media screen and (max-width: 800px){
   
     .dropbtn{
     font-size: 10px;
     }
 }
 
+/* YOUR BAG PAGE */
+
+/* Global "table" column settings */
+.product-image { float: left; width: 20%; }
+.product-details { float: left; width: 37%; }
+.product-price { float: left; width: 12%; }
+.product-quantity { float: left; width: 10%; }
+.product-removal { float: left; width: 9%; }
+.product-line-price { float: left; width: 12%; text-align: right; }
+
+
+/* This is used as the traditional .clearfix class */
+.group:before,
+.group:after {
+    content: '';
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1;
+}
+
+
+/* Apply clearfix in a few places */
+.shopping-cart, .column-labels, .product, .totals-item {
+  @extend .group;
+}
