@@ -241,30 +241,69 @@ body {
 
 /* YOUR BAG PAGE */
 
-/* Global "table" column settings */
-.product-image { float: left; width: 20%; }
-.product-details { float: left; width: 37%; }
-.product-price { float: left; width: 12%; }
-.product-quantity { float: left; width: 10%; }
-.product-removal { float: left; width: 9%; }
-.product-line-price { float: left; width: 12%; text-align: right; }
 
-
-/* This is used as the traditional .clearfix class */
-.group:before,
-.group:after {
-    content: '';
-    display: table;
-} 
-.group:after {
-    clear: both;
-}
-.group {
-    zoom: 1;
+.item {
+    position: relative;
+    width: 30%;
+    margin: auto;
+    text-align: center;  
+    margin: 80px auto;
+    padding: 10px 10px;
+    height: 120px;
+    background-color: #F6EDE5;   
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+  
+  .delete-btn{
+    display: inline-block;
+    Cursor: pointer;
+    position: relative;
+    padding-top: 30px;
+    margin-left: 300px;
+    width: 18px;
+    height: 17px;
+    
+  }
+   
+  .image img {
+    position: relative;
+    bottom: 50px;
+    right: 136px;
+    width: 30%;
+    height: 100%;
+    object-fit:cover;
+   
+  }
+   
+  .description {
+    margin-right: 60px;
+    position: relative;
+    bottom: 230px;
+    left: 30px;
+  }
+   
+  .description span {
+    display: block;
+    font-size: 14px;
+    color: #371E08;
+    font-weight: 400;
+  }
+   
+  .description span:first-child {
+    margin-bottom: 5px;
+  }
+  .description span:last-child {
+    font-weight: 300;
+    margin-top: 8px;
+    color: #86939E;
+  }
 
-/* Apply clearfix in a few places */
-.shopping-cart, .column-labels, .product, .totals-item {
-  @extend .group;
-}
+  .total-price {
+ 
+    text-align: center;
+    font-size: 16px;
+    color: #371E08;
+    font-weight: 300;
+  }
