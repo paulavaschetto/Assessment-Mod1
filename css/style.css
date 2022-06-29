@@ -68,6 +68,8 @@ body {
     text-decoration: none;
   }
  
+/* HOME PAGE */
+
 .container{
     position: relative;
     margin: auto;
@@ -159,8 +161,7 @@ body {
     position: relative;
   }
 
-  /* Dropdown Button */
-
+ 
 .dropbtn{
     background-color: #CCC0B6;
     color: #371E08;
@@ -241,69 +242,111 @@ body {
 
 /* YOUR BAG PAGE */
 
-
 .item {
-    position: relative;
-    width: 30%;
     margin: auto;
-    text-align: center;  
-    margin: 80px auto;
-    padding: 10px 10px;
-    height: 120px;
+    width: 50%;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
     background-color: #F6EDE5;   
-    width: 30%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-  
-  .delete-btn{
-    display: inline-block;
-    Cursor: pointer;
+
+.image{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    text-align: center;
     position: relative;
-    padding-top: 30px;
-    margin-left: 300px;
-    width: 18px;
-    height: 17px;
+    min-height: 338px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+   
+.image img {
+    position: absolute;
+    width: 28%;
+    height: 50%;
+    margin: 10px;
+}
+  
+
+ 
+.delete-btn{
+    Cursor: pointer;
+    font-size: 30px;
+    color: #371E08;
+    position: absolute;
+    left: 90%;
+    top: 45%;
+  }
+
+   
+  .description {
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    color: #371E08;
+    margin: -20px 20px;
+    
     
   }
    
-  .image img {
-    position: relative;
-    bottom: 50px;
-    right: 136px;
-    width: 30%;
-    height: 100%;
-    object-fit:cover;
-   
+  .description h2 {
+    position: absolute;  
   }
-   
-  .description {
-    margin-right: 60px;
-    position: relative;
-    bottom: 230px;
-    left: 30px;
+
+  .description h3 {
+    left: 85px;
+    top: 5px;
+    position: absolute;
   }
-   
-  .description span {
-    display: block;
-    font-size: 14px;
-    color: #371E08;
-    font-weight: 400;
-  }
-   
-  .description span:first-child {
-    margin-bottom: 5px;
-  }
-  .description span:last-child {
+  .description h4 {
     font-weight: 300;
-    margin-top: 8px;
+    margin-top: 62px;
     color: #86939E;
   }
 
-  .total-price {
- 
+.counter-check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 42%;
+    left: 34%;
+}
+.counter-check h2{
+    width: 40px;
+    border: 0;
+    line-height: 20px;
+    font-size: 25px;
     text-align: center;
-    font-size: 16px;
+    background: transparent;
+    color: #371E08;
+    appearance: none;
+    outline: 0;
+}
+.counter-check button{
+    display: block;
+    font-size: 30px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #371E08;
+    background-color: #CCC0B6;
+    user-select: none;
+    width: 40px;
+    border-width: 0.5px;
+    border-color:#948578;
+}
+
+.total-price {
+    text-align: center;
+    font-size: 25px;
     color: #371E08;
     font-weight: 300;
+    position: absolute;
+    left: 82%;
+    top: 70%;
   }

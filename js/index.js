@@ -31,6 +31,7 @@ function openMenu() {
   
     //printing default value of data that is 0 in h2 tag
     document.getElementById("counting").innerText = data;
+    document.getElementById("counting-check").innerText = data;
 
     //creation of increment function
     function increment() {
@@ -41,4 +42,14 @@ function openMenu() {
     function decrement() {
         data = data - 1;
         document.getElementById("counting").innerText = data;
+    }
+
+    function increment() {
+        data = data + 1;
+        document.getElementById("counting-check").innerText = data;
+    }
+    //creation of decrement function
+    function decrement() {
+        data = data - 1;
+        document.getElementById("counting-check").innerText = data;
     }
