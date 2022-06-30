@@ -280,7 +280,9 @@ body {
     color: #371E08;
     position: absolute;
     left: 90%;
-    top: 42%;
+    top: 40%;
+    border: none;
+    background-color: transparent;
   }
 
    
