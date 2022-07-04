@@ -28,18 +28,18 @@ function openMenu() {
         document.getElementById("counting").innerText = data;
     }
 
-    var dataCheckout = 1;
-    document.getElementById("counting-check").innerText = dataCheckout;
+    // var dataCheckout = 1;
+    // document.getElementById("counting-check").innerText = dataCheckout;
 
-    function incrementCheck() {
-        dataCheckout = dataCheckout + 1;
-        document.getElementById("counting-check").innerText = dataCheckout;
-    }
-    //creation of decrement function//
-    function decrementCheck() {
-      dataCheckout = dataCheckout - 1;
-        document.getElementById("counting-check").innerText = dataCheckout;
-    }
+    // function incrementCheck() {
+    //     dataCheckout = dataCheckout + 1;
+    //     document.getElementById("counting-check").innerText = dataCheckout;
+    // }
+    // //creation of decrement function//
+    // function decrementCheck() {
+    //   dataCheckout = dataCheckout - 1;
+    //     document.getElementById("counting-check").innerText = dataCheckout;
+    // }
 
     // remove item from cart
 
