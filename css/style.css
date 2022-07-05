@@ -127,6 +127,7 @@ body {
 /* COFFEE MENU PAGE */
 .content-section {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .coffee-card {
