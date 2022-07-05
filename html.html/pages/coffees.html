@@ -95,6 +95,34 @@
    </div>
     <button class="add-to-cart">ADD</button>
   </div>
+  <div class="coffee-card">   
+    <img src="../Images/capuccino copy.jpg" alt="capuccino">
+    <h1>Mocha<br>Moka</h1>
+    <div class="dropdown">
+        <select name="size" class="dropbtn">
+            <option value="default" selected>Select Your Size <br>/ Rahi</option>
+            <option value="small">Small $4.00</option>
+            <option value="Regular">Regular $4.50</option>
+            <option value="Large">Large $5.00</option>
+        </select>
+    </div>
+    <div class="dropdown">
+        <select name="milk" class="dropbtn">
+            <div class="dropdown-milk">
+            <option value="default" selected>Select Your Milk <span>/ Miraka</span></option>
+            <option value="normal">Normal</option>
+            <option value="light">Skimmed</option>
+            <option value="vegan">Soy</option>
+            </div>
+          </select>
+    </div>
+    <div class="counter">
+      <button class="down" onClick='decrement()'>-</button>
+      <h2 id="counting">0</h2>
+      <button class="up" onClick='increment()'>+</button>
+   </div>
+    <button class="add-to-cart">ADD</button>
+  </div>
 </div>
 
 <script src="../../js/index.js"></script>
