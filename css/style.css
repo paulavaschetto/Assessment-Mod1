@@ -16,7 +16,6 @@ body {
 #topnav {
   overflow: hidden;
   background-color: #543910;
-  position: relative;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -131,12 +130,10 @@ body {
 }
 
 .coffee-card {
-  position: relative;
   width: 30%;
   border: #371E08;
   border-width: 0.5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: auto;
   text-align: center;
   margin: 30px;
   flex: 1 0 40%;
@@ -145,16 +142,12 @@ body {
 .coffee-card img {
   width: 100%;
   object-fit: cover;
-  left: 0;
-  top: 0;
-  z-index: 0;
   max-height: 300px;
 }
 
 .dropdown {
   display: block;
-  width: 100%;
-  position: relative;
+  margin-bottom: 20px;
 }
 
 .dropbtn {
@@ -166,7 +159,7 @@ body {
   cursor: pointer;
   font-family: comfortaa;
   border-radius: 5px;
-  width: 60%;
+  width: 40%;
 }
 
 /* Dropdown button on hover & focus */
@@ -176,7 +169,7 @@ body {
 
 .counter {
   width: 100%;
-  margin: auto;
+  margin: 20px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,24 +214,31 @@ body {
   font-weight: 600;
   color: #CCC0B6;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .add-to-cart:hover {
   opacity: 0.8;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 400px) {
+  .topnav {
+    width: 100%;
+  }
+  .coffee-card {
+    font-size: 10px;
+    width: max-content;
+    flex-basis: content;
+  }
   .dropbtn {
+    width: 30vw;
     font-size: 10px;
   }
 }
 /* YOUR BAG PAGE */
 .item {
   margin: auto;
-  width: 50%;
-  height: 50%;
-  justify-content: space-between;
-  align-items: center;
+  width: 40%;
   background-color: #F6EDE5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -250,32 +250,32 @@ body {
 .cart-row img {
   width: 20vw;
   margin: 10px;
-  max-height: 25vh;
+  max-height: 45vh;
   object-fit: cover;
 }
 .cart-row .description {
   color: #371E08;
-}
-.cart-row .description .title {
-  margin-top: 10px;
+  margin: 10px 30px;
 }
 .cart-row .description .title h2, .cart-row .description .title h3 {
-  margin-top: 20px;
   display: inline;
 }
-
-.amend-qty {
+.cart-row .description .title h2 {
+  margin-right: 10px;
+}
+.cart-row .description h4 {
+  margin-bottom: 15px;
+}
+.cart-row .amend-qty {
   display: flex;
   flex-direction: row;
+  margin-bottom: 15px;
 }
-.amend-qty .counter-check {
+.cart-row .amend-qty .counter-check {
   display: flex;
   align-items: center;
-  justify-content: center;
-  bottom: 45%;
-  left: 34%;
 }
-.amend-qty .counter-check h2 {
+.cart-row .amend-qty .counter-check h2 {
   width: 40px;
   border: 0;
   line-height: 20px;
@@ -286,7 +286,7 @@ body {
   appearance: none;
   outline: 0;
 }
-.amend-qty .counter-check button {
+.cart-row .amend-qty .counter-check button {
   font-size: 30px;
   padding: 0 10px;
   cursor: pointer;
@@ -297,30 +297,22 @@ body {
   border-width: 0.5px;
   border-color: #948578;
 }
-.amend-qty .delete-btn {
-  display: inline;
+.cart-row .amend-qty .delete-btn {
   Cursor: pointer;
   font-size: 30px;
   color: #371E08;
-  margin-left: 40px;
+  margin-left: 65px;
   border: none;
   background-color: transparent;
 }
-
-.amount {
-  text-align: end;
+.cart-row .amount {
   color: #371E08;
-  margin-right: 10px;
 }
-.amount h3 {
+.cart-row .amount h3 {
   display: inline;
 }
-.amount .price {
-  margin-bottom: 20px;
-}
-.amount .subtotal {
-  margin-left: 20px;
-  margin-right: 155px;
+.cart-row .amount .subtotal {
+  margin-right: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -18,7 +18,7 @@ body {
 #topnav {
     overflow: hidden;
     background-color: #543910;
-    position: relative;
+    // position: relative;
     
   }
   
@@ -140,12 +140,10 @@ body {
   display: flex;
 }
 .coffee-card{
-    position: relative;
     width: 30%;
     border: #371E08;
     border-width: 0.5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: auto;
     text-align: center;  
     margin: 30px;
     flex: 1 0 40%;
@@ -155,16 +153,13 @@ body {
 .coffee-card img{
   width: 100%;
   object-fit: cover;
-  left: 0;
-  top: 0;
-  z-index: 0;
   max-height: 300px;
+  // photo size is w4054 h4064
 }
 
 .dropdown{
     display: block;
-    width: 100%;
-    position: relative;
+    margin-bottom: 20px;
   }
 
  
@@ -177,7 +172,7 @@ body {
     cursor: pointer;
     font-family: comfortaa;
     border-radius: 5px; 
-    width:60%;
+    width:40%;
   }
   
 
@@ -189,7 +184,7 @@ body {
  
 .counter{
     width: 100%;
-    margin: auto;
+    margin: 20px auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,6 +227,7 @@ body {
     font-weight: 600;
     color: #CCC0B6;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .add-to-cart:hover{
@@ -239,9 +235,17 @@ body {
   }
 
   
-@media screen and (max-width: 800px){
-  
+@media screen and (max-width: 400px){
+    .topnav{
+      width: 100%;
+    }
+    .coffee-card{
+      font-size: 10px;
+      width: max-content;
+      flex-basis: content;
+    }
     .dropbtn{
+    width: 30vw;
     font-size: 10px;
     }
 }
@@ -250,10 +254,7 @@ body {
 
 .item {
     margin: auto;
-    width: 50%;
-    height: 50%;
-    justify-content: space-between;
-    align-items: center;
+    width: 40%;
     background-color: #F6EDE5;   
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -264,82 +265,74 @@ body {
   img{
     width: 20vw;
     margin: 10px;
-    max-height: 25vh;
+    max-height: 45vh;
     object-fit: cover;
   }
   .description {
     color: #371E08;
+    margin: 10px 30px;
     .title{
-      margin-top: 10px;
       h2, h3{
-        margin-top: 20px;
         display: inline;
       }
+      h2{
+        margin-right: 10px;
+      }
+    }
+    h4{
+      margin-bottom: 15px;
     }
   }
+    .amend-qty {
+      display: flex;  
+      flex-direction: row;
+      margin-bottom: 15px;
 
-}
-   
-.amend-qty {
-  display: flex;  
-  flex-direction: row;
-  .counter-check{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 45%;
-    left: 34%;
-  }
- 
-    .counter-check h2{
-      width: 40px;
-      border: 0;
-      line-height: 20px;
-      font-size: 25px;
-      text-align: center;
-      background: transparent;
-      color: #371E08;
-      appearance: none;
-      outline: 0;
+      .counter-check{
+        display: flex;
+        align-items: center;
+      }
+    
+        .counter-check h2{
+          width: 40px;
+          border: 0;
+          line-height: 20px;
+          font-size: 25px;
+          text-align: center;
+          background: transparent;
+          color: #371E08;
+          appearance: none;
+          outline: 0;
+        }
+          .counter-check button{
+            font-size: 30px;
+            padding: 0 10px;
+            cursor: pointer;
+            color: #371E08;
+            background-color: #CCC0B6;
+            user-select: none;
+            width: 40px;
+            border-width: 0.5px;
+            border-color:#948578;
+          }
+    
+          .delete-btn{
+            Cursor: pointer;
+            font-size: 30px;
+            color: #371E08;
+            margin-left: 65px;
+            border: none;
+            background-color: transparent;
+            }
     }
-      .counter-check button{
-        font-size: 30px;
-        padding: 0 10px;
-        cursor: pointer;
+    .amount {   
         color: #371E08;
-        background-color: #CCC0B6;
-        user-select: none;
-        width: 40px;
-        border-width: 0.5px;
-        border-color:#948578;
-      }
-
-    .delete-btn{
-      display: inline;
-      Cursor: pointer;
-      font-size: 30px;
-      color: #371E08;
-      margin-left: 40px;
-      border: none;
-      background-color: transparent;
-      }
-}
-    
-
-.amount {
-    text-align: end;
-    color: #371E08;
-    margin-right: 10px;
-
-    h3{
-      display: inline;
+        h3{
+          display: inline;
+        }
+        .subtotal {
+           margin-right: 80px;
+        }
+        }
+        
     }
-    .price{
-      margin-bottom: 20px;
-    }
-    .subtotal {
-      margin-left: 20px;
-      margin-right: 155px;
-    }
-    
-  }
