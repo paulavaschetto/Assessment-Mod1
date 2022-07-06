@@ -250,7 +250,6 @@ body {
 .cart-row img {
   width: 20vw;
   margin: 10px;
-  max-height: 30vh;
   object-fit: cover;
 }
 .cart-row .description {
@@ -313,6 +312,64 @@ body {
 }
 .cart-row .amount .subtotal {
   margin-right: 80px;
+}
+
+hr {
+  background-color: #371E08;
+  color: #371E08;
+  height: 2px;
+  width: 55VW;
+}
+
+.total-to-pay {
+  color: #371E08;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 25px;
+}
+.total-to-pay p {
+  display: inline;
+}
+.total-to-pay .total {
+  margin-right: 60px;
+}
+.total-to-pay .total-number {
+  margin-left: 30vw;
+}
+
+.terms {
+  text-align: center;
+  color: #371E08;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.check-out-btn {
+  text-align: center;
+  background-color: #371E08;
+  padding: 15px 40px;
+  font-size: 20px;
+  border: none;
+  font-family: comfortaa;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.check-out-btn a {
+  text-decoration: none;
+  color: #CCC0B6;
+}
+
+.check-out-btn:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 480px) {
+  hr {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
