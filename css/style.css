@@ -160,7 +160,7 @@ body {
   cursor: pointer;
   font-family: comfortaa;
   border-radius: 5px;
-  width: 40%;
+  width: 70%;
 }
 
 /* Dropdown button on hover & focus */
@@ -222,41 +222,40 @@ body {
   opacity: 0.8;
 }
 
-@media screen and (max-width: 400px) {
-  .topnav {
-    width: 100%;
-  }
+@media screen and (max-width: 480px) {
   .coffee-card {
-    font-size: 10px;
-    width: max-content;
-    flex-basis: content;
+    margin: 10px;
+  }
+  .coffee-card img {
+    height: 20vh;
+  }
+  .coffee-card h1 {
+    font-size: 20px;
   }
   .dropbtn {
-    width: 30vw;
-    font-size: 10px;
+    width: 38vw;
+    font-size: 7px;
+    height: 5vh;
   }
 }
 /* YOUR BAG PAGE */
-.item {
-  margin: auto;
-  width: 40%;
-  background-color: #F6EDE5;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
 .cart-row {
   display: flex;
-  flex-direction: row;
+  margin: auto;
+  width: fit-content;
+  background-color: #F6EDE5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
 }
 .cart-row img {
   width: 20vw;
   margin: 10px;
-  max-height: 45vh;
+  max-height: 30vh;
   object-fit: cover;
 }
 .cart-row .description {
   color: #371E08;
-  margin: 10px 30px;
+  margin: 10px 20px;
 }
 .cart-row .description .title h2, .cart-row .description .title h3 {
   display: inline;
