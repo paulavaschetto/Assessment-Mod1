@@ -129,29 +129,29 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-
-.coffee-card {
+.content-section .product-card {
   width: 30%;
   border: #371E08;
   border-width: 0.5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
-  margin: 30px;
+  margin: 20px 15px;
   flex: 1 0 40%;
+  /* Dropdown button on hover & focus */
 }
-
-.coffee-card img {
+.content-section .product-card img {
   width: 100%;
   object-fit: cover;
   max-height: 210px;
 }
-
-.dropdown {
+.content-section .product-card p {
+  font-size: 20px;
+}
+.content-section .product-card .dropdown {
   display: block;
   margin-bottom: 20px;
 }
-
-.dropbtn {
+.content-section .product-card .dropbtn {
   background-color: #CCC0B6;
   color: #371E08;
   padding: 16px;
@@ -162,21 +162,17 @@ body {
   border-radius: 5px;
   width: 70%;
 }
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
+.content-section .product-card .dropbtn:hover, .content-section .product-card .dropbtn:focus {
   background-color: #dccec2;
 }
-
-.counter {
+.content-section .product-card .counter {
   width: 100%;
   margin: 20px auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.counter h2 {
+.content-section .product-card .counter h2 {
   width: 40px;
   border: 0;
   line-height: 20px;
@@ -187,8 +183,7 @@ body {
   appearance: none;
   outline: 0;
 }
-
-.counter button {
+.content-section .product-card .counter button {
   display: block;
   font-size: 30px;
   padding: 0 10px;
@@ -200,12 +195,10 @@ body {
   border-width: 0.5px;
   border-color: #948578;
 }
-
-.counter button:hover {
+.content-section .product-card .counter button:hover {
   background-color: #dccec2;
 }
-
-.add-to-cart {
+.content-section .product-card .add-to-cart {
   background-color: #371E08;
   padding: 15px 40px;
   font-size: 20px;
@@ -217,22 +210,24 @@ body {
   border-radius: 5px;
   margin-bottom: 20px;
 }
-
-.add-to-cart:hover {
+.content-section .product-card .add-to-cart:hover {
   opacity: 0.8;
 }
 
 @media screen and (max-width: 480px) {
-  .coffee-card {
+  .content-section .product-card {
     margin: 10px;
   }
-  .coffee-card img {
-    height: 20vh;
+  .content-section .product-card img {
+    height: 12vh;
   }
-  .coffee-card h1 {
-    font-size: 20px;
+  .content-section .product-card h1 {
+    font-size: 15px;
   }
-  .dropbtn {
+  .content-section .product-card p {
+    font-size: 10px;
+  }
+  .content-section .product-card .dropbtn {
     width: 38vw;
     font-size: 7px;
     height: 5vh;
