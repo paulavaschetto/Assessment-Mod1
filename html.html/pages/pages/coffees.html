@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Coffees Menu</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Inter:wght@100;200&family=Koulen&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9f1265a69a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="topnav">
+    <a href="../index.html">
+      <img class="logo" src="../Images/logowhitetransp.png" alt="logo" >
+      </a>
+      
+    
+     <div id="menuLinks">
+        <a href="../pages/coffees.html">Coffees</a>
+        <a href="../pages/empanadas.html">Empanadas</a>
+        <a href="../pages/deals.html">Deals</a>
+        <a href="#contact">Contact Us</a>
+        <a href="../pages/about.html">About Us</a>
+     </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i></a>
+
+      <a href="./your_bag.html" class="bag_icon"><i class="fa-solid fa-bag-shopping"></i></a>
+
+  </div>
+   
+
+<div id="bc"><a href="../index.html">Home</a> > Coffees</div>  
+
+<div class="content-section">
+  <!-- item 1 -->
+  <div class="product-card">   
+        <img src="../Images/latte copy.jpg" alt="latte">
+        <h1>Latte<br>Rate</h1>
+        <div class="dropdown">
+            <select name="size" class="dropbtn">
+                <option value="default" selected>Select Your Size <br>/ Rahi</option>
+                <option value="small">Small $4.00</option>
+                <option value="Regular">Regular $4.50</option>
+                <option value="Large">Large $5.00</option>
+            </select>
+        </div>
+        <div class="dropdown">
+            <select name="milk" class="dropbtn">
+                <div class="dropdown-milk">
+                <option value="default" selected>Select Your Milk <span>/ Miraka</span></option>
+                <option value="normal">Normal</option>
+                <option value="light">Skimmed</option>
+                <option value="vegan">Soy</option>
+                </div>
+              </select>
+        </div>
+        <div class="counter">
+          <button class="down" onClick='decrement()'>-</button>
+          <h2 id="counting"></h2>
+          <button class="up" onClick='increment()'>+</button>
+       </div>
+        <button class="add-to-cart">ADD</button>
+  </div>
+<!-- item 2 -->
+  <div class="product-card">   
+    <img src="../Images/cappuccino.jpg" alt="cappuccino">
+    <h1>Cappuccino<br>Kaputino</h1>
+    <div class="dropdown">
+        <select name="size" class="dropbtn">
+            <option value="default" selected>Select Your Size <br>/ Rahi</option>
+            <option value="small">Small $4.00</option>
+            <option value="Regular">Regular $4.50</option>
+            <option value="Large">Large $5.00</option>
+        </select>
+    </div>
+    <div class="dropdown">
+        <select name="milk" class="dropbtn">
+            <div class="dropdown-milk">
+            <option value="default" selected>Select Your Milk <span>/ Miraka</span></option>
+            <option value="normal">Normal</option>
+            <option value="light">Skimmed</option>
+            <option value="vegan">Soy</option>
+            </div>
+          </select>
+    </div>
+    <div class="counter">
+      <button class="down" onClick='decrement()'>-</button>
+      <h2 id="counting">0</h2>
+      <button class="up" onClick='increment()'>+</button>
+   </div>
+    <button class="add-to-cart">ADD</button>
+  </div>
+
+  <!-- item 3 -->
+  <div class="product-card">
+    <img src="../Images/mocha2.jpg" alt="mocha">
+    <h1>Mocha<br>Moka</h1>
+    <div class="dropdown">
+        <select name="size" class="dropbtn">
+            <option value="default" selected>Select Your Size <br>/ Rahi</option>
+            <option value="small">Small $4.00</option>
+            <option value="Regular">Regular $4.50</option>
+            <option value="Large">Large $5.00</option>
+        </select>
+    </div>
+    <div class="dropdown">
+        <select name="milk" class="dropbtn">
+            <div class="dropdown-milk">
+            <option value="default" selected>Select Your Milk <span>/ Miraka</span></option>
+            <option value="normal">Normal</option>
+            <option value="light">Skimmed</option>
+            <option value="vegan">Soy</option>
+            </div>
+          </select>
+    </div>
+    <div class="counter">
+      <button class="down" onClick='decrement()'>-</button>
+      <h2 id="counting">0</h2>
+      <button class="up" onClick='increment()'>+</button>
+   </div>
+    <button class="add-to-cart">ADD</button>
+  </div>
+
+  <!-- item 4 -->
+  <div class="product-card">   
+    <img src="../Images/espresso.jpg" alt="espresso">
+    <h1>Espresso<br>Kawhe tere</h1>
+    <div class="dropdown">
+        <select name="size" class="dropbtn">
+            <option value="default" selected>Select Your Size <br>/ Rahi</option>
+            <option value="small">Small $4.00</option>
+            <option value="Regular">Regular $4.50</option>
+            <option value="Large">Large $5.00</option>
+        </select>
+    </div>
+    <div class="dropdown">
+        <select name="milk" class="dropbtn" disabled>
+            <div class="dropdown-milk">
+            <option value="default" selected>Select Your Milk <span>/ Miraka</span></option>
+            <option value="normal">Normal</option>
+            <option value="light">Skimmed</option>
+            <option value="vegan">Soy</option>
+            </div>
+          </select>
+    </div>
+    <div class="counter">
+      <button class="down" onClick='decrement()'>-</button>
+      <h2 id="counting">0</h2>
+      <button class="up" onClick='increment()'>+</button>
+   </div>
+    <button class="add-to-cart">ADD</button>
+  </div>
+
+  <!-- item 5 -->
+  <div class="product-card">   
+    <img src="../Images/tea.jpg" alt="tea">
+    <h1>Tea<br>Tī</h1>
+    <div class="dropdown">
+        <select name="size" class="dropbtn">
+            <option value="default" selected>Select Your Size <br>/ Rahi</option>
+            <option value="small">Small $4.00</option>
+            <option value="Regular">Regular $4.50</option>
+            <option value="Large">Large $5.00</option>
+        </select>
+    </div>
+    <div class="dropdown">
+        <select name="milk" class="dropbtn">
+            <div class="dropdown-milk">
+            <option value="default" selected>Select Your Milk <span>/ Miraka</span></option>
+            <option value="normal">Normal</option>
+            <option value="light">Skimmed</option>
+            <option value="vegan">Soy</option>
+            </div>
+          </select>
+    </div>
+    <div class="counter">
+      <button class="down" onClick='decrement()'>-</button>
+      <h2 id="counting">0</h2>
+      <button class="up" onClick='increment()'>+</button>
+   </div>
+    <button class="add-to-cart">ADD</button>
+  </div>
+
+  <!-- item 6 -->
+  <div class="product-card">   
+    <img src="../Images/chai latte.jpg" alt="chai latte">
+    <h1>Chai Latte<br>Kikini rāte</h1>
+    <div class="dropdown">
+        <select name="size" class="dropbtn">
+            <option value="default" selected>Select Your Size <br>/ Rahi</option>
+            <option value="small">Small $4.00</option>
+            <option value="Regular">Regular $4.50</option>
+            <option value="Large">Large $5.00</option>
+        </select>
+    </div>
+    <div class="dropdown">
+        <select name="milk" class="dropbtn">
+            <div class="dropdown-milk">
+            <option value="default" selected>Select Your Milk <span>/ Miraka</span></option>
+            <option value="normal">Normal</option>
+            <option value="light">Skimmed</option>
+            <option value="vegan">Soy</option>
+            </div>
+          </select>
+    </div>
+    <div class="counter">
+      <button class="down" onClick='decrement()'>-</button>
+      <h2 id="counting">0</h2>
+      <button class="up" onClick='increment()'>+</button>
+   </div>
+    <button class="add-to-cart">ADD</button>
+  </div>
+</div>
+
+<script src="../../js/index.js"></script>
+</body>
+
+
+</html>
