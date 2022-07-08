@@ -376,22 +376,21 @@ hr {
   align-items: center;
   justify-content: center;
 }
-
-.promo-card {
+.promo-section .promo-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   margin: 20px 15px;
   justify-content: center;
 }
-.promo-card img {
+.promo-section .promo-card img {
   width: 30vw;
   object-fit: cover;
   max-height: fit-content;
 }
-.promo-card .heading {
+.promo-section .promo-card .heading {
   text-align: center;
 }
-.promo-card .heading .choose-deal-btn {
+.promo-section .promo-card .heading .choose-deal-btn {
   background-color: #f4efeb;
   color: #371E08;
   padding: 16px;
@@ -403,11 +402,11 @@ hr {
   border-radius: 5px;
   text-align: center;
 }
-.promo-card .heading .dropdown-flavor {
+.promo-section .promo-card .heading .dropdown-flavor {
   margin-bottom: 32px;
   margin-top: 22px;
 }
-.promo-card .heading .dropdown-flavor .dropbtn-deals {
+.promo-section .promo-card .heading .dropdown-flavor .dropbtn-deals {
   background-color: #CCC0B6;
   color: #371E08;
   padding: 16px;
@@ -418,12 +417,12 @@ hr {
   font-family: comfortaa;
   border-radius: 5px;
 }
-.promo-card .heading .dropdown-flavor .counter-deals {
+.promo-section .promo-card .heading .dropdown-flavor .counter-deals {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.promo-card .heading .dropdown-flavor .counter-deals h2 {
+.promo-section .promo-card .heading .dropdown-flavor .counter-deals h2 {
   width: 40px;
   border: 0;
   line-height: 20px;
@@ -434,9 +433,9 @@ hr {
   appearance: none;
   outline: 0;
 }
-.promo-card .heading .dropdown-flavor .counter-deals button {
+.promo-section .promo-card .heading .dropdown-flavor .counter-deals button {
   display: block;
-  font-size: 20px;
+  font-size: 30px;
   padding: 0 10px;
   cursor: pointer;
   color: #371E08;
@@ -446,10 +445,10 @@ hr {
   border-width: 0.5px;
   border-color: #948578;
 }
-.promo-card .heading .dropdown-flavor .counter-deals button:hover {
+.promo-section .promo-card .heading .dropdown-flavor .counter-deals button:hover {
   background-color: #dccec2;
 }
-.promo-card .heading .add-to-cart {
+.promo-section .promo-card .heading .add-to-cart {
   background-color: #371E08;
   padding: 15px 40px;
   font-size: 20px;
@@ -461,8 +460,32 @@ hr {
   border-radius: 5px;
   margin-bottom: 20px;
 }
-.promo-card .heading .add-to-cart:hover {
+.promo-section .promo-card .heading .add-to-cart:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 480px) {
+  .promo-section .promo-card {
+    display: block;
+    margin: 10px;
+  }
+  .promo-section .promo-card img {
+    width: 86vw;
+    height: 20vh;
+  }
+  .promo-section .promo-card .heading .choose-deal-btn {
+    font-size: 10px;
+  }
+  .promo-section .promo-card .heading .dropdown-flavor {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .promo-section .promo-card .heading .dropdown-flavor .dropbtn-deals {
+    font-size: 10px;
+  }
+  .promo-section .promo-card .heading .dropdown-flavor .counter-deals button, .promo-section .promo-card .heading .dropdown-flavor .counter-deals h2 {
+    font-size: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

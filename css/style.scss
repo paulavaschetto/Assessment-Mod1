@@ -413,96 +413,129 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-  }
-  .promo-card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    display: flex;
-    margin: 20px 15px;
-    justify-content: center;
-      img{
-      width: 30vw;
-      object-fit: cover;
-      max-height: fit-content;
-    }
-    
-    .heading{
-      text-align: center;
-      .choose-deal-btn {
-        background-color: #f4efeb;
-        color: #371E08;
-        padding: 16px;
-        margin: 10px 25px;
-        font-size: 18px;
-        border: none;
-        cursor: pointer;
-        font-family: comfortaa;
-        border-radius: 5px; 
+  
+    .promo-card{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      display: flex;
+      margin: 20px 15px;
+      justify-content: center;
+        img{
+        width: 30vw;
+        object-fit: cover;
+        max-height: fit-content;
+      }
+      
+      .heading{
         text-align: center;
-        }
-        .dropdown-flavor{
-          margin-bottom: 32px;
-          margin-top: 22px;
-          .dropbtn-deals {
-            background-color: #CCC0B6;
-            color: #371E08;
-            padding: 16px;
-            margin: 0px 25px;
-            font-size: 15px;
-            border-color:#948578;
-            cursor: pointer;
-            font-family: comfortaa;
-            border-radius: 5px; 
-          }
-          .counter-deals{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .counter-deals h2{
-              width: 40px;
-              border: 0;
-              line-height: 20px;
-              font-size: 25px;
-              text-align: center;
-              background: transparent;
-              color: #371E08;
-              appearance: none;
-              outline: 0;
-          }
-          .counter-deals button{
-              display: block;
-              font-size: 20px;
-              padding: 0 10px;
-              cursor: pointer;
-              color: #371E08;
-              background-color: #CCC0B6;
-              user-select: none;
-              width: 40px;
-              border-width: 0.5px;
-              border-color:#948578;
-          }
-          .counter-deals button:hover{
-              background-color: #dccec2;
-          }
-        }
-        .add-to-cart{
-          background-color: #371E08;
-          padding: 15px 40px;
-          font-size: 20px;
+        .choose-deal-btn {
+          background-color: #f4efeb;
+          color: #371E08;
+          padding: 16px;
+          margin: 10px 25px;
+          font-size: 18px;
           border: none;
           cursor: pointer;
           font-family: comfortaa;
-          font-weight: 600;
-          color: #CCC0B6;
-          border-radius: 5px;
-          margin-bottom: 20px;
-      }
-      
-      .add-to-cart:hover{
-          opacity: 0.8;
-        }
-    }
+          border-radius: 5px; 
+          text-align: center;
+          }
+          .dropdown-flavor{
+            margin-bottom: 32px;
+            margin-top: 22px;
+            .dropbtn-deals {
+              background-color: #CCC0B6;
+              color: #371E08;
+              padding: 16px;
+              margin: 0px 25px;
+              font-size: 15px;
+              border-color:#948578;
+              cursor: pointer;
+              font-family: comfortaa;
+              border-radius: 5px; 
+            }
+            .counter-deals{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .counter-deals h2{
+                width: 40px;
+                border: 0;
+                line-height: 20px;
+                font-size: 25px;
+                text-align: center;
+                background: transparent;
+                color: #371E08;
+                appearance: none;
+                outline: 0;
+            }
+            .counter-deals button{
+                display: block;
+                font-size: 30px;
+                padding: 0 10px;
+                cursor: pointer;
+                color: #371E08;
+                background-color: #CCC0B6;
+                user-select: none;
+                width: 40px;
+                border-width: 0.5px;
+                border-color:#948578;
+            }
+            .counter-deals button:hover{
+                background-color: #dccec2;
+            }
+          }
+          .add-to-cart{
+            background-color: #371E08;
+            padding: 15px 40px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            font-family: comfortaa;
+            font-weight: 600;
+            color: #CCC0B6;
+            border-radius: 5px;
+            margin-bottom: 20px;
+          }
         
-    
-   
+        .add-to-cart:hover{
+            opacity: 0.8;
+          }
+      }
+    }
   }
+
+  @media screen and (max-width: 480px){
+    .promo-section{
+      .promo-card {
+        display: block;
+        margin: 10px;
+       img{
+        width: 86vw;
+        height: 20vh;
+       }
+       .heading{
+          .choose-deal-btn {
+            font-size: 10px;
+
+          }
+          .dropdown-flavor{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            .dropbtn-deals{
+              font-size: 10px;
+            }
+            .counter-deals{
+              button, h2{
+               font-size: 25px; 
+              }
+              
+            }
+            
+          }
+        
+          
+        }
+      }
+    }
+  }  
