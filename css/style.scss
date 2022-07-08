@@ -139,6 +139,7 @@ body {
 .content-section{
   display: flex;
   flex-wrap: wrap;
+  
   .product-card{
     width: 30%;
     border: #371E08;
@@ -413,7 +414,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-  
     .promo-card{
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       display: flex;
@@ -424,7 +424,6 @@ body {
         object-fit: cover;
         max-height: fit-content;
       }
-      
       .heading{
         text-align: center;
         .choose-deal-btn {
@@ -517,7 +516,6 @@ body {
        .heading{
           .choose-deal-btn {
             font-size: 10px;
-
           }
           .dropdown-flavor{
             margin-top: 10px;
@@ -529,13 +527,35 @@ body {
               button, h2{
                font-size: 25px; 
               }
-              
             }
-            
           }
-        
-          
         }
       }
     }
   }  
+
+
+// ABOUT US PAGE
+
+.about-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  .first-p{
+    display: flex;
+    p{
+    font-size: 20px;
+    color: #371E08;
+    margin-top: 30px;
+    margin-left: 50px;
+    }
+    img{
+      margin-top: 30px;
+      margin-right: 50px;
+      width: 30%;
+      height: 50vh;
+    }
+  }
+}
