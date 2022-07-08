@@ -151,6 +151,9 @@ body {
   display: block;
   margin-bottom: 20px;
 }
+.content-section .product-card .dropdown-flavor {
+  justify-content: center;
+}
 .content-section .product-card .dropbtn {
   background-color: #CCC0B6;
   color: #371E08;
@@ -161,6 +164,16 @@ body {
   font-family: comfortaa;
   border-radius: 5px;
   width: 70%;
+}
+.content-section .product-card .dropbtn-deals {
+  background-color: #CCC0B6;
+  color: #371E08;
+  padding: 16px;
+  font-size: 15px;
+  border-color: #948578;
+  cursor: pointer;
+  font-family: comfortaa;
+  border-radius: 5px;
 }
 .content-section .product-card .dropbtn:hover, .content-section .product-card .dropbtn:focus {
   background-color: #dccec2;

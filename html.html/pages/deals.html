@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Coffees Menu</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Inter:wght@100;200&family=Koulen&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9f1265a69a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="topnav">
+    <a href="../index.html">
+      <img class="logo" src="../Images/logowhitetransp.png" alt="logo" >
+      </a>
+      
+    
+     <div id="menuLinks">
+        <a href="../pages/coffees.html">Coffees</a>
+        <a href="../pages/empanadas.html">Empanadas</a>
+        <a href="#deals">Deals</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#about">About Us</a>
+     </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i></a>
+
+      <a href="./your_bag.html" class="bag_icon"><i class="fa-solid fa-bag-shopping"></i></a>
+
+  </div>
+   
+
+<div id="bc"><a href="../index.html">Home</a> > Coffees</div>  
+
+<div class="content-section">
+  <!-- item 1 -->
+  <div class="product-card">   
+        <img src="../Images/promo 1.jpg" alt="promo page">
+        <div class="dropdown-flavor">
+            <select name="flavor" class="dropbtn-deals">
+                <option value="default" selected>Select promo / Toha</option>
+                <option value="promo1">6 empanadas $22</option>
+                <option value="promo2">8 empanadas #30</option>
+                <option value="promo3">12 empanadas $44</option>
+            </select>
+        </div>
+        <!-- <div class="description">
+            <div class="title">
+            <h2>6 empanadas</h2>
+            <h3>$22</h3>
+          </div>
+        </div> -->
+        <div class="dropdown-flavor">
+            <select name="flavor" class="dropbtn-deals">
+                <option value="default" selected>Choose your Filling / Whakakī</option>
+                <option value="beef">Beef / Mīti kau</option>
+                <option value="Ham&cheese">Ham & Cheese / Wāmu & Tīhi</option>
+                <option value="Veggie">Veggie / Kaiwhenua</option>
+            </select>
+            <div class="counter">
+                <button class="down" onClick='decrement()'>-</button>
+                <h2 id="counting"></h2>
+                <button class="up" onClick='increment()'>+</button>
+             </div>
+        </div>
+        <div class="dropdown-flavor">
+            <select name="flavor" class="dropbtn-deals">
+                <option value="default" selected>Choose your Filling / Whakakī</option>
+                <option value="beef">Beef / Mīti kau</option>
+                <option value="Ham&cheese">Ham & Cheese / Wāmu & Tīhi</option>
+                <option value="Veggie">Veggie / Kaiwhenua</option>
+            </select>
+            <div class="counter">
+                <button class="down" onClick='decrement()'>-</button>
+                <h2 id="counting">0</h2>
+                <button class="up" onClick='increment()'>+</button>
+             </div>
+        </div>
+        <div class="dropdown-flavor">
+            <select name="flavor" class="dropbtn-deals">
+                <option value="default" selected>Choose your Filling / Whakakī</option>
+                <option value="beef">Beef / Mīti kau</option>
+                <option value="Ham&cheese">Ham & Cheese / Wāmu & Tīhi</option>
+                <option value="Veggie">Veggie / Kaiwhenua</option>
+            </select>
+            <div class="counter">
+                <button class="down" onClick='decrement()'>-</button>
+                <h2 id="counting">0</h2>
+                <button class="up" onClick='increment()'>+</button>
+             </div>
+        </div>
+        <button class="add-to-cart">ADD</button>
+  </div>
+<!-- item 2 -->
+<!-- <div class="product-card">   
+    <img src="../Images/promo 1.jpg" alt="promo1">
+    <div class="description">
+        <div class="title">
+        <h2>8 empanadas</h2>
+        <h3>$30</h3>
+      </div>
+    </div>
+    <div class="dropdown-flavor">
+        <select name="flavor" class="dropbtn-deals">
+            <option value="default" selected>Choose your Filling / Whakakī</option>
+            <option value="beef">Beef / Mīti kau</option>
+            <option value="Ham&cheese">Ham & Cheese / Wāmu & Tīhi</option>
+            <option value="Veggie">Veggie / Kaiwhenua</option>
+        </select>
+        <div class="counter">
+            <button class="down" onClick='decrement()'>-</button>
+            <h2 id="counting"></h2>
+            <button class="up" onClick='increment()'>+</button>
+         </div>
+    </div>
+    <div class="dropdown-flavor">
+        <select name="flavor" class="dropbtn-deals">
+            <option value="default" selected>Choose your Filling / Whakakī</option>
+            <option value="beef">Beef / Mīti kau</option>
+            <option value="Ham&cheese">Ham & Cheese / Wāmu & Tīhi</option>
+            <option value="Veggie">Veggie / Kaiwhenua</option>
+        </select>
+        <div class="counter">
+            <button class="down" onClick='decrement()'>-</button>
+            <h2 id="counting">0</h2>
+            <button class="up" onClick='increment()'>+</button>
+         </div>
+    </div>
+    <div class="dropdown-flavor">
+        <select name="flavor" class="dropbtn-deals">
+            <option value="default" selected>Choose your Filling / Whakakī</option>
+            <option value="beef">Beef / Mīti kau</option>
+            <option value="Ham&cheese">Ham & Cheese / Wāmu & Tīhi</option>
+            <option value="Veggie">Veggie / Kaiwhenua</option>
+        </select>
+        <div class="counter">
+            <button class="down" onClick='decrement()'>-</button>
+            <h2 id="counting">0</h2>
+            <button class="up" onClick='increment()'>+</button>
+         </div>
+    </div>
+    <button class="add-to-cart">ADD</button>
+</div> -->
+
+  <!-- item 3 -->
+  <!-- <div class="product-card">   
+    <img src="../Images/latte copy.jpg" alt="latte">
+    <h1>12 empanadas</h1>
+    <h2>$44</h2>
+    <div class="dropdown">
+        <select name="flavor" class="dropbtn">
+            <option value="default" selected>Choose your Filling / Whakakī</option>
+            <option value="beef">Beef / Mīti kau</option>
+            <option value="Ham&cheese">Ham & Cheese / Wāmu & Tīhi</option>
+            <option value="Veggie">Veggie / Kaiwhenua</option>
+        </select>
+        <div class="counter">
+            <button class="down" onClick='decrement()'>-</button>
+            <h2 id="counting"></h2>
+            <button class="up" onClick='increment()'>+</button>
+         </div>
+    </div>
+    <div class="dropdown">
+        <select name="flavor" class="dropbtn">
+            <option value="default" selected>Choose your Filling / Whakakī</option>
+            <option value="beef">Beef / Mīti kau</option>
+            <option value="Ham&cheese">Ham & Cheese / Wāmu & Tīhi</option>
+            <option value="Veggie">Veggie / Kaiwhenua</option>
+        </select>
+        <div class="counter">
+            <button class="down" onClick='decrement()'>-</button>
+            <h2 id="counting">0</h2>
+            <button class="up" onClick='increment()'>+</button>
+         </div>
+    </div>
+    <div class="dropdown">
+        <select name="flavor" class="dropbtn">
+            <option value="default" selected>Choose your Filling / Whakakī</option>
+            <option value="beef">Beef / Mīti kau</option>
+            <option value="Ham&cheese">Ham & Cheese / Wāmu & Tīhi</option>
+            <option value="Veggie">Veggie / Kaiwhenua</option>
+        </select>
+        <div class="counter">
+            <button class="down" onClick='decrement()'>-</button>
+            <h2 id="counting">0</h2>
+            <button class="up" onClick='increment()'>+</button>
+         </div>
+    </div>
+    <button class="add-to-cart">ADD</button>
+</div> -->
+
+</div>
+
+<script src="../../js/index.js"></script>
+</body>
+
+
+</html>

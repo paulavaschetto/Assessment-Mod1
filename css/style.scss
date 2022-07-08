@@ -159,8 +159,12 @@ body {
       display: block;
       margin-bottom: 20px;
     }
+    .dropdown-flavor{
+      justify-content: center;
+      margin-bottom: 32px;
+      margin-top: 22px;
+    }
   
-   
   .dropbtn{
       background-color: #CCC0B6;
       color: #371E08;
@@ -172,7 +176,16 @@ body {
       border-radius: 5px; 
       width:70%;
     }
-    
+  .dropbtn-deals{
+      background-color: #CCC0B6;
+      color: #371E08;
+      padding: 16px;
+      font-size: 15px;
+      border-color:#948578;
+      cursor: pointer;
+      font-family: comfortaa;
+      border-radius: 5px; 
+  }
   
     /* Dropdown button on hover & focus */
   .dropbtn:hover, .dropbtn:focus{
