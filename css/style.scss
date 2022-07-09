@@ -1,3 +1,5 @@
+$FontColor: #371E08;
+
 body {
     background: linear-gradient(to top left, #ab8960, transparent);
     background-repeat: no-repeat;
@@ -142,7 +144,7 @@ body {
   
   .product-card{
     width: 30%;
-    border: #371E08;
+    border: $FontColor;
     border-width: 0.5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;  
@@ -168,7 +170,7 @@ body {
   
   .dropbtn{
       background-color: #CCC0B6;
-      color: #371E08;
+      color: $FontColor;
       padding: 16px;
       font-size: 15px;
       border-color:#948578;
@@ -199,7 +201,7 @@ body {
       font-size: 25px;
       text-align: center;
       background: transparent;
-      color: #371E08;
+      color: $FontColor;
       appearance: none;
       outline: 0;
   }
@@ -208,7 +210,7 @@ body {
       font-size: 30px;
       padding: 0 10px;
       cursor: pointer;
-      color: #371E08;
+      color: $FontColor;
       background-color: #CCC0B6;
       user-select: none;
       width: 40px;
@@ -221,7 +223,7 @@ body {
     }
   
     .add-to-cart{
-      background-color: #371E08;
+      background-color: $FontColor;
       padding: 15px 40px;
       font-size: 20px;
       border: none;
@@ -282,7 +284,7 @@ body {
     object-fit: cover;
   }
   .description {
-    color: #371E08;
+    color: $FontColor;
     margin: 10px 20px;
     .title{
       h2, h3{
@@ -313,7 +315,7 @@ body {
           font-size: 25px;
           text-align: center;
           background: transparent;
-          color: #371E08;
+          color: $FontColor;
           appearance: none;
           outline: 0;
         }
@@ -321,7 +323,7 @@ body {
             font-size: 30px;
             padding: 0 10px;
             cursor: pointer;
-            color: #371E08;
+            color: $FontColor;
             background-color: #CCC0B6;
             user-select: none;
             width: 40px;
@@ -332,14 +334,14 @@ body {
           .delete-btn{
             Cursor: pointer;
             font-size: 30px;
-            color: #371E08;
+            color: $FontColor;
             margin-left: 65px;
             border: none;
             background-color: transparent;
             }
     }
     .amount {   
-        color: #371E08;
+        color: $FontColor;
         h3{
           display: inline;
         }
@@ -350,14 +352,14 @@ body {
     }
 
     hr {
-      background-color: #371E08;
-      color: #371E08;
+      background-color: $FontColor;
+      color: $FontColor;
       height: 2px;
       width: 55VW;
      }
   
     .total-to-pay{
-      color: #371E08;
+      color: $FontColor;
       text-align: center;
       font-size: 30px;
       margin-top: 25px;
@@ -375,14 +377,14 @@ body {
 
   .terms{
     text-align: center;
-    color: #371E08;
+    color: $FontColor;
     font-size: 20px;
     margin-top: 35px;
     margin-bottom: 35px;
   }
    .check-out-btn{
     text-align: center;
-    background-color: #371E08;
+    background-color: $FontColor;
     padding: 15px 40px;
     font-size: 20px;
     border: none;
@@ -428,7 +430,7 @@ body {
         text-align: center;
         .choose-deal-btn {
           background-color: #f4efeb;
-          color: #371E08;
+          color: $FontColor;
           padding: 16px;
           margin: 10px 25px;
           font-size: 18px;
@@ -443,7 +445,7 @@ body {
             margin-top: 22px;
             .dropbtn-deals {
               background-color: #CCC0B6;
-              color: #371E08;
+              color: $FontColor;
               padding: 16px;
               margin: 10px 25px;
               font-size: 15px;
@@ -464,7 +466,7 @@ body {
                 font-size: 25px;
                 text-align: center;
                 background: transparent;
-                color: #371E08;
+                color: $FontColor;
                 appearance: none;
                 outline: 0;
             }
@@ -473,7 +475,7 @@ body {
                 font-size: 30px;
                 padding: 0 10px;
                 cursor: pointer;
-                color: #371E08;
+                color: $FontColor;
                 background-color: #CCC0B6;
                 user-select: none;
                 width: 40px;
@@ -485,7 +487,7 @@ body {
             }
           }
           .add-to-cart{
-            background-color: #371E08;
+            background-color: $FontColor;
             padding: 15px 40px;
             font-size: 20px;
             border: none;
@@ -538,24 +540,88 @@ body {
 // ABOUT US PAGE
 
 .about-section{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   width: 70%;
-  .first-p{
-    display: flex;
+  margin: auto;
+  .text{
     p{
     font-size: 20px;
-    color: #371E08;
-    margin-top: 30px;
-    margin-left: 50px;
+    font-weight: 100;
+    color: $FontColor;
+    margin: 30px 20px;
+    line-height: 30px;
+    text-align: justify;
     }
-    img{
-      margin-top: 30px;
-      margin-right: 50px;
-      width: 30%;
-      height: 50vh;
+    h2{
+      color: $FontColor;
+      text-align: center;
+      font-weight: 100;
+      span{
+        font-weight: bold;
+      }
     }
   }
+  .image-section{
+    display: flex;
+    margin-bottom: 30px;
+    img{
+      margin-right: 35px;
+      margin-left: 20px;
+      object-fit: cover;
+      width: 40%;
+      height: fit-content
+    }
+    h1{
+      color: $FontColor;
+      font-weight: 600;
+      line-height: 45px;
+      padding-right: 30px;
+    }
+    p{
+      font-size: 20px;
+      font-weight: 100;
+      color: $FontColor;
+      margin-right: 20px;
+      margin-top: 0;
+      line-height: 30px;
+      text-align: justify;
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  .about-section{
+    width: auto;
+   .text{
+      p{
+        margin: 30px 30px;
+        font-size: 15px;
+        line-height: 25px;
+      }
+      h2{
+        font-size: 20px;
+        margin: 30px 30px;
+      }
+   }
+   .image-section{
+      img{
+        margin-left: 30px;
+        margin-right: 20px;
+        height: auto;
+
+      }
+      h1{
+        margin-right: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 20px;
+        line-height: 26px;
+    }
+      p{
+        font-size: 15px;
+        line-height: 25px;
+        margin-right: 35px;
+        margin-top: 0;
+      }
+   }
+  }  
 }
