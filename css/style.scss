@@ -7,7 +7,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-family: "comfortaa";
+    font-family: $Font;
     margin: 0;
 }
 
@@ -179,7 +179,7 @@ body {
       font-size: 15px;
       border-color:#948578;
       cursor: pointer;
-      font-family: comfortaa;
+      font-family: $Font;
       border-radius: 5px; 
       width:70%;
     }
@@ -232,7 +232,7 @@ body {
       font-size: 20px;
       border: none;
       cursor: pointer;
-      font-family: comfortaa;
+      font-family: $Font;
       font-weight: 600;
       color: $SecondaryColor;
       border-radius: 5px;
@@ -397,7 +397,7 @@ body {
     padding: 15px 40px;
     font-size: 20px;
     border: none;
-    font-family: comfortaa;
+    font-family: $Font;
     font-weight: 600;
     border-radius: 5px;
     margin-top: 35px;
@@ -444,7 +444,7 @@ body {
           font-size: 18px;
           border: none;
           cursor: pointer;
-          font-family: comfortaa;
+          font-family: $Font;
           border-radius: 5px; 
           text-align: center;
           }
@@ -459,7 +459,7 @@ body {
               font-size: 15px;
               border-color:#948578;
               cursor: pointer;
-              font-family: comfortaa;
+              font-family: $Font;
               border-radius: 5px; 
             }
             .counter-deals{
@@ -500,7 +500,7 @@ body {
             font-size: 20px;
             border: none;
             cursor: pointer;
-            font-family: comfortaa;
+            font-family: $Font;
             font-weight: 600;
             color: $SecondaryColor;
             border-radius: 5px;
@@ -635,38 +635,100 @@ body {
 
 //CONTACT US
 .contact-section{
-  display: flex;
-  flex-wrap: wrap;
-  width: 70%;
-  margin: auto;
-  color: $FontColor;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    color: $FontColor;
   .container{
-   text-align: center;
-  width: max-content;
-  }
-  .heading{
-    p{
-      margin-bottom: 40px;
-      text-align: center;
-    }
-  }
-  .form-input{
-    text-align: initial;
-    .input-group{
-      margin-bottom: 20px;
-      label{
-        display: block;
-        margin-bottom: 10px;
+    text-align: center;
+    width: max-content;
+    .wording{
+      margin-bottom: 50px;
+      p{
+        text-align: center;
+        font-size: 20px;
       }
-      input{
-        font-family: $Font;
-        width: 50%;
+      h2{
+        line-height: 35px;
+      }
+      a {
+        color: $FontColor;
+        text-decoration: none;
+        font-size: 40px;
+        margin: 10px 10px;
       }
     }
-    .primary-btn{
-      font-family: $Font;
-      color: $FontColor;
+    .form-sect{
+      text-align: initial;
+      .input-group{
+        margin-bottom: 20px;
+        label{
+          display: block;
+          margin-bottom: 10px;
+        }
+        input, textarea{
+          font-family: $Font;
+          width: 100%;
+        }
+        .taller-fields{
+          height: 20px;
+       
+          }
+      }
+      .submit{
+        text-align: center;
+        .primary-btn{
+          background-color: $FontColor;
+          padding: 15px 40px;
+          font-size: 20px;
+          border: none;
+          cursor: pointer;
+          font-family: $Font;
+          font-weight: 600;
+          color: $SecondaryColor;
+          border-radius: 5px;
+          margin-bottom: 20px;
+        }
+        .primary-btn:hover{
+          opacity: 0.8;
+          }
+      }
     }
   }
 }
 
+@media screen and (max-width: 480px){
+ .contact-section{
+  .container{
+    width: fit-content;
+      .wording{
+        margin-bottom: 25px;
+          p{
+            font-size: 12px;
+            margin-bottom: 20px;
+          }
+          h2{
+          font-size: 15px;
+          line-height: 22px;
+          }
+      }
+      .form-sect{
+        .input-group{
+          .label{
+            font-size: 12px;
+          }
+        }
+       .submit{
+        .primary-btn{
+          padding: 10px 30px;
+          font-size: 15px;
+          margin-bottom: 10px;
+        }
+       }
+      }
+  }
+ }
+   
+  
+}

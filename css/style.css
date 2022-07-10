@@ -164,7 +164,7 @@ body {
   font-size: 15px;
   border-color: #948578;
   cursor: pointer;
-  font-family: comfortaa;
+  font-family: "comfortaa";
   border-radius: 5px;
   width: 70%;
 }
@@ -210,7 +210,7 @@ body {
   font-size: 20px;
   border: none;
   cursor: pointer;
-  font-family: comfortaa;
+  font-family: "comfortaa";
   font-weight: 600;
   color: #CCC0B6;
   border-radius: 5px;
@@ -356,7 +356,7 @@ hr {
   padding: 15px 40px;
   font-size: 20px;
   border: none;
-  font-family: comfortaa;
+  font-family: "comfortaa";
   font-weight: 600;
   border-radius: 5px;
   margin-top: 35px;
@@ -403,7 +403,7 @@ hr {
   font-size: 18px;
   border: none;
   cursor: pointer;
-  font-family: comfortaa;
+  font-family: "comfortaa";
   border-radius: 5px;
   text-align: center;
 }
@@ -419,7 +419,7 @@ hr {
   font-size: 15px;
   border-color: #948578;
   cursor: pointer;
-  font-family: comfortaa;
+  font-family: "comfortaa";
   border-radius: 5px;
 }
 .promo-section .promo-card .heading .dropdown-flavor .counter-deals {
@@ -459,7 +459,7 @@ hr {
   font-size: 20px;
   border: none;
   cursor: pointer;
-  font-family: comfortaa;
+  font-family: "comfortaa";
   font-weight: 600;
   color: #CCC0B6;
   border-radius: 5px;
@@ -581,27 +581,81 @@ hr {
   text-align: center;
   width: max-content;
 }
-.contact-section .heading p {
-  margin-bottom: 40px;
-  text-align: center;
+.contact-section .container .wording {
+  margin-bottom: 50px;
 }
-.contact-section .form-input {
+.contact-section .container .wording p {
+  text-align: center;
+  font-size: 20px;
+}
+.contact-section .container .wording h2 {
+  line-height: 35px;
+}
+.contact-section .container .wording a {
+  color: #371E08;
+  text-decoration: none;
+  font-size: 40px;
+  margin: 10px 10px;
+}
+.contact-section .container .form-sect {
   text-align: initial;
 }
-.contact-section .form-input .input-group {
+.contact-section .container .form-sect .input-group {
   margin-bottom: 20px;
 }
-.contact-section .form-input .input-group label {
+.contact-section .container .form-sect .input-group label {
   display: block;
   margin-bottom: 10px;
 }
-.contact-section .form-input .input-group input {
-  font-family: "comforta";
-  width: 50%;
+.contact-section .container .form-sect .input-group input, .contact-section .container .form-sect .input-group textarea {
+  font-family: "comfortaa";
+  width: 100%;
 }
-.contact-section .form-input .primary-btn {
-  font-family: "comforta";
-  color: #371E08;
+.contact-section .container .form-sect .input-group .taller-fields {
+  height: 20px;
+}
+.contact-section .container .form-sect .submit {
+  text-align: center;
+}
+.contact-section .container .form-sect .submit .primary-btn {
+  background-color: #371E08;
+  padding: 15px 40px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "comfortaa";
+  font-weight: 600;
+  color: #CCC0B6;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.contact-section .container .form-sect .submit .primary-btn:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 480px) {
+  .contact-section .container {
+    width: fit-content;
+  }
+  .contact-section .container .wording {
+    margin-bottom: 25px;
+  }
+  .contact-section .container .wording p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .contact-section .container .wording h2 {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .contact-section .container .form-sect .input-group .label {
+    font-size: 12px;
+  }
+  .contact-section .container .form-sect .submit .primary-btn {
+    padding: 10px 30px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
