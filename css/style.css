@@ -601,15 +601,19 @@ hr {
   text-align: initial;
 }
 .contact-section .container .form-sect .input-group {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 .contact-section .container .form-sect .input-group label {
-  display: block;
   margin-bottom: 10px;
 }
 .contact-section .container .form-sect .input-group input, .contact-section .container .form-sect .input-group textarea {
   font-family: "comfortaa";
   width: 100%;
+  color: #371E08;
+  background-color: #F6EDE5;
+  border: none;
 }
 .contact-section .container .form-sect .input-group .taller-fields {
   height: 20px;
@@ -656,6 +660,93 @@ hr {
     font-size: 15px;
     margin-bottom: 10px;
   }
+}
+.checkout-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  color: #371E08;
+}
+.checkout-section .order-check {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.checkout-section .order-check label {
+  font-size: 20px;
+  margin-right: 26px;
+}
+.checkout-section .order-check .time {
+  margin-right: 45px;
+}
+.checkout-section .order-check .dropbtn {
+  background-color: #CCC0B6;
+  color: #371E08;
+  padding: 16px;
+  font-size: 15px;
+  border-color: #948578;
+  cursor: pointer;
+  font-family: "comfortaa";
+  border-radius: 5px;
+}
+.checkout-section .order-check .dropbtn:hover, .checkout-section .order-check .dropbtn:focus {
+  background-color: #dccec2;
+}
+.checkout-section .payment {
+  margin-top: 30px;
+}
+.checkout-section .payment .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.checkout-section .payment .form-group label {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.checkout-section .payment .form-group input {
+  border: none;
+  background-color: #F6EDE5;
+  color: #371E08;
+  height: 30px;
+  text-align: initial;
+}
+.checkout-section .payment .smaller-fields {
+  display: flex;
+}
+.checkout-section .payment .smaller-fields .form-control {
+  width: fit-content;
+  margin-right: 90px;
+}
+.checkout-section .payment .receipt {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.checkout-section .payment .receipt input [type=checkbox] {
+  font-size: 15px;
+}
+.checkout-section .payment .confirmation {
+  text-align: center;
+}
+.checkout-section .payment .confirmation button a {
+  text-decoration: none;
+  color: #CCC0B6;
+}
+.checkout-section .payment .confirmation .primary-btn {
+  background-color: #371E08;
+  padding: 15px 40px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "comfortaa";
+  font-weight: 600;
+  color: #CCC0B6;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.checkout-section .payment .confirmation .primary-btn:hover {
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=style.css.map */

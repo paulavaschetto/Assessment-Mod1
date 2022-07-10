@@ -662,18 +662,21 @@ body {
     .form-sect{
       text-align: initial;
       .input-group{
+        display: flex;
+        flex-direction: column;
         margin-bottom: 20px;
         label{
-          display: block;
           margin-bottom: 10px;
         }
         input, textarea{
           font-family: $Font;
           width: 100%;
+          color: $FontColor;
+          background-color: #F6EDE5;
+          border: none;
         }
         .taller-fields{
           height: 20px;
-       
           }
       }
       .submit{
@@ -729,6 +732,98 @@ body {
       }
   }
  }
-   
-  
 }
+//CHECK OUT PAGE
+
+.checkout-section{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  color: $FontColor;
+  .order-check{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    label{
+      font-size: 20px;
+      margin-right: 26px;
+    }
+    .time{
+      margin-right: 45px;
+    }
+    .dropbtn{
+      background-color: $SecondaryColor;
+      color: $FontColor;
+      padding: 16px;
+      font-size: 15px;
+      border-color:#948578;
+      cursor: pointer;
+      font-family: $Font;
+      border-radius: 5px; 
+    }
+    .dropbtn:hover, .dropbtn:focus{
+        background-color: #dccec2;
+    }
+  }
+  .payment{
+    margin-top: 30px;
+    .form-group{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      label{
+        margin-bottom: 15px;
+        font-size: 20px;
+      }
+      input{
+        border: none;
+        background-color:#F6EDE5;
+        color: $FontColor;
+        height: 30px; 
+        text-align: initial;
+      }
+    }
+    .smaller-fields{
+      display: flex;
+      .form-control{
+        width: fit-content;
+        margin-right: 90px;
+      }
+    }
+    .receipt{
+      font-size: 20px;
+      margin-bottom: 25px;
+      input [type=checkbox]{
+        font-size: 15px;
+      }
+      
+    }
+    .confirmation{
+      text-align: center;
+      button a{
+        text-decoration: none;
+        color: $SecondaryColor;
+      }
+      .primary-btn{
+          background-color: $FontColor;
+          padding: 15px 40px;
+          font-size: 20px;
+          border: none;
+          cursor: pointer;
+          font-family: $Font;
+          font-weight: 600;
+          color: $SecondaryColor;
+          border-radius: 5px;
+          margin-bottom: 20px;
+        }
+      .primary-btn:hover{
+          opacity: 0.8;
+        }
+    }
+  }
+}
+     
+  
+
+  

@@ -37,7 +37,56 @@
 
 <div id="bc"><a href="../index.html">Home</a> > Check Out</div>  
 
-
+<div class="checkout-section">
+        <div class="order-check">
+            <label class="time" for="time-select">Pick-up time in</label>
+            <select name="time" class="dropbtn">
+                <option value="15min">15 minutes</option>
+                <option value="20min">20 minutes</option>
+                <option value="30min">30 minutes</option>
+            </select>
+        </div>
+        <div class="order-check">
+            <label for="payment-select">Payment method</label>
+            <select name="time" class="dropbtn">
+                <option value="15min">Debit/Credit card</option>
+                <option value="20min">Cash on pick-up</option>
+            </select>
+         </div>
+    
+        <div class="payment">
+            <form>
+                <div class="form-group">
+                    <label for="owner">Card Holder Name*</label>
+                    <input type="text" >
+                </div>
+                <div class="form-group">
+                    <label for="cardNumber">Card Number*</label>
+                    <input  type="text" >
+                </div>
+                <div class="smaller-fields">
+                    <div class="form-group">
+                        <label for="cvv">CVV*</label>
+                        <input class="form-control" type="text" >
+                    </div>
+                    <div class="form-group">
+                        <label>Expiry Date*</label>
+                        <input  class="form-control" type="date">
+                    </div>
+                 </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input  type="email">
+                </div>
+                <div class="receipt"> 
+                    <input type="checkbox" name="accept" value="receipt">
+                    <label for="GST">Tick to receive a GST receipt</label>
+                </div>
+                <div class="confirmation">
+                    <Button class="primary-btn"><a href="./checkout.html">CONFIRM</a></Button>
+                </div>
+            </form>
+</div>
 <script src="../../js/index.js"></script>
 </body>
 
