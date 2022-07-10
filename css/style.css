@@ -576,52 +576,53 @@ hr {
   width: 70%;
   margin: auto;
   color: #371E08;
+  justify-content: center;
 }
-.contact-section .container {
+.contact-section .container-contact {
   text-align: center;
   width: max-content;
 }
-.contact-section .container .wording {
+.contact-section .container-contact .wording {
   margin-bottom: 50px;
 }
-.contact-section .container .wording p {
+.contact-section .container-contact .wording p {
   text-align: center;
   font-size: 20px;
 }
-.contact-section .container .wording h2 {
+.contact-section .container-contact .wording h2 {
   line-height: 35px;
 }
-.contact-section .container .wording a {
+.contact-section .container-contact .wording a {
   color: #371E08;
   text-decoration: none;
   font-size: 40px;
   margin: 10px 10px;
 }
-.contact-section .container .form-sect {
+.contact-section .container-contact .form-sect {
   text-align: initial;
 }
-.contact-section .container .form-sect .input-group {
+.contact-section .container-contact .form-sect .input-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
-.contact-section .container .form-sect .input-group label {
+.contact-section .container-contact .form-sect .input-group label {
   margin-bottom: 10px;
 }
-.contact-section .container .form-sect .input-group input, .contact-section .container .form-sect .input-group textarea {
+.contact-section .container-contact .form-sect .input-group input, .contact-section .container-contact .form-sect .input-group textarea {
   font-family: "comfortaa";
   width: 100%;
   color: #371E08;
   background-color: #F6EDE5;
   border: none;
 }
-.contact-section .container .form-sect .input-group .taller-fields {
-  height: 20px;
+.contact-section .container-contact .form-sect .input-group .taller-fields {
+  height: 30px;
 }
-.contact-section .container .form-sect .submit {
+.contact-section .container-contact .form-sect .submit {
   text-align: center;
 }
-.contact-section .container .form-sect .submit .primary-btn {
+.contact-section .container-contact .form-sect .submit .primary-btn {
   background-color: #371E08;
   padding: 15px 40px;
   font-size: 20px;
@@ -633,29 +634,26 @@ hr {
   border-radius: 5px;
   margin-bottom: 20px;
 }
-.contact-section .container .form-sect .submit .primary-btn:hover {
+.contact-section .container-contact .form-sect .submit .primary-btn:hover {
   opacity: 0.8;
 }
 
 @media screen and (max-width: 480px) {
-  .contact-section .container {
-    width: fit-content;
-  }
-  .contact-section .container .wording {
+  .contact-section .container-contact .wording {
     margin-bottom: 25px;
   }
-  .contact-section .container .wording p {
+  .contact-section .container-contact .wording p {
     font-size: 12px;
     margin-bottom: 20px;
   }
-  .contact-section .container .wording h2 {
+  .contact-section .container-contact .wording h2 {
     font-size: 15px;
     line-height: 22px;
   }
-  .contact-section .container .form-sect .input-group .label {
+  .contact-section .container-contact .form-sect .input-group .label {
     font-size: 12px;
   }
-  .contact-section .container .form-sect .submit .primary-btn {
+  .contact-section .container-contact .form-sect .submit .primary-btn {
     padding: 10px 30px;
     font-size: 15px;
     margin-bottom: 10px;
@@ -664,23 +662,28 @@ hr {
 .checkout-section {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  width: 50%;
+  width: 60%;
+  justify-content: center;
   margin: auto;
   color: #371E08;
 }
-.checkout-section .order-check {
+.checkout-section .container-checkout {
+  width: 100%;
+}
+.checkout-section .container-checkout .order-check {
+  display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.checkout-section .order-check label {
+.checkout-section .container-checkout .order-check label {
   font-size: 20px;
   margin-right: 26px;
+  padding-top: 15px;
 }
-.checkout-section .order-check .time {
+.checkout-section .container-checkout .order-check .time {
   margin-right: 45px;
 }
-.checkout-section .order-check .dropbtn {
+.checkout-section .container-checkout .order-check .dropbtn {
   background-color: #CCC0B6;
   color: #371E08;
   padding: 16px;
@@ -690,50 +693,49 @@ hr {
   font-family: "comfortaa";
   border-radius: 5px;
 }
-.checkout-section .order-check .dropbtn:hover, .checkout-section .order-check .dropbtn:focus {
+.checkout-section .container-checkout .order-check .dropbtn:hover, .checkout-section .container-checkout .order-check .dropbtn:focus {
   background-color: #dccec2;
 }
-.checkout-section .payment {
+.checkout-section .container-checkout .payment {
   margin-top: 30px;
 }
-.checkout-section .payment .form-group {
+.checkout-section .container-checkout .payment .form-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
 }
-.checkout-section .payment .form-group label {
+.checkout-section .container-checkout .payment .form-group label {
   margin-bottom: 15px;
   font-size: 20px;
 }
-.checkout-section .payment .form-group input {
+.checkout-section .container-checkout .payment .form-group input {
   border: none;
   background-color: #F6EDE5;
   color: #371E08;
   height: 30px;
   text-align: initial;
 }
-.checkout-section .payment .smaller-fields {
+.checkout-section .container-checkout .payment .smaller-fields {
   display: flex;
 }
-.checkout-section .payment .smaller-fields .form-control {
-  width: fit-content;
+.checkout-section .container-checkout .payment .smaller-fields .form-control {
   margin-right: 90px;
 }
-.checkout-section .payment .receipt {
+.checkout-section .container-checkout .payment .receipt {
   font-size: 20px;
   margin-bottom: 25px;
 }
-.checkout-section .payment .receipt input [type=checkbox] {
+.checkout-section .container-checkout .payment .receipt input [type=checkbox] {
   font-size: 15px;
 }
-.checkout-section .payment .confirmation {
+.checkout-section .container-checkout .payment .confirmation {
   text-align: center;
 }
-.checkout-section .payment .confirmation button a {
+.checkout-section .container-checkout .payment .confirmation button a {
   text-decoration: none;
   color: #CCC0B6;
 }
-.checkout-section .payment .confirmation .primary-btn {
+.checkout-section .container-checkout .payment .confirmation .primary-btn {
   background-color: #371E08;
   padding: 15px 40px;
   font-size: 20px;
@@ -745,8 +747,45 @@ hr {
   border-radius: 5px;
   margin-bottom: 20px;
 }
-.checkout-section .payment .confirmation .primary-btn:hover {
+.checkout-section .container-checkout .payment .confirmation .primary-btn:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 480px) {
+  .checkout-section {
+    width: auto;
+  }
+  .checkout-section .container-checkout {
+    width: 80%;
+    justify-content: center;
+  }
+  .checkout-section .container-checkout .order-check label {
+    font-size: 15px;
+  }
+  .checkout-section .container-checkout .order-check .time {
+    margin-right: 30px;
+  }
+  .checkout-section .container-checkout .order-check .dropbtn {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .checkout-section .container-checkout .payment .form-group {
+    margin-bottom: 20px;
+  }
+  .checkout-section .container-checkout .payment .form-group label {
+    font-size: 15px;
+  }
+  .checkout-section .container-checkout .payment .smaller-fields .form-control {
+    margin-right: 43px;
+  }
+  .checkout-section .container-checkout .payment .receipt {
+    font-size: 15px;
+  }
+  .checkout-section .container-checkout .payment .confirmation .primary-btn {
+    padding: 10px 30px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
