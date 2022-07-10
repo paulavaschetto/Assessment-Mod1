@@ -1,4 +1,6 @@
 $FontColor: #371E08;
+$SecondaryColor: #CCC0B6;
+$Font:"comfortaa";
 
 body {
     background: linear-gradient(to top left, #ab8960, transparent);
@@ -64,11 +66,13 @@ body {
   #bc {
     font-size: 12px;
     padding: 8px 10px;
+    color: $FontColor;
+    a{
+    text-decoration: none;
+    color: $FontColor;
+    }
   }
 
-  #bc a{
-    text-decoration: none;
-  }
  
 /* HOME PAGE */
 
@@ -169,7 +173,7 @@ body {
     }
   
   .dropbtn{
-      background-color: #CCC0B6;
+      background-color: $SecondaryColor;
       color: $FontColor;
       padding: 16px;
       font-size: 15px;
@@ -211,7 +215,7 @@ body {
       padding: 0 10px;
       cursor: pointer;
       color: $FontColor;
-      background-color: #CCC0B6;
+      background-color: $SecondaryColor;
       user-select: none;
       width: 40px;
       border-width: 0.5px;
@@ -222,7 +226,7 @@ body {
       background-color: #dccec2;
     }
   
-    .add-to-cart{
+    .primary-btn{
       background-color: $FontColor;
       padding: 15px 40px;
       font-size: 20px;
@@ -230,12 +234,17 @@ body {
       cursor: pointer;
       font-family: comfortaa;
       font-weight: 600;
-      color: #CCC0B6;
+      color: $SecondaryColor;
       border-radius: 5px;
       margin-bottom: 20px;
+      
+      a{
+        text-decoration: none;
+        color: $SecondaryColor;
+      }
   }
   
-  .add-to-cart:hover{
+  .primary-btn:hover{
       opacity: 0.8;
     }
   
@@ -324,7 +333,7 @@ body {
             padding: 0 10px;
             cursor: pointer;
             color: $FontColor;
-            background-color: #CCC0B6;
+            background-color: $SecondaryColor;
             user-select: none;
             width: 40px;
             border-width: 0.5px;
@@ -371,7 +380,7 @@ body {
         margin-right: 60px;
       }
       .total-number{
-        margin-left: 30vw;
+        margin-left: 25%;
       }
     }
 
@@ -392,10 +401,9 @@ body {
     font-weight: 600;
     border-radius: 5px;
     margin-top: 35px;
-    
     a{
     text-decoration: none;
-    color: #CCC0B6;
+    color: $SecondaryColor;
    }
 }
 
@@ -444,7 +452,7 @@ body {
             margin-bottom: 32px;
             margin-top: 22px;
             .dropbtn-deals {
-              background-color: #CCC0B6;
+              background-color: $SecondaryColor;
               color: $FontColor;
               padding: 16px;
               margin: 10px 25px;
@@ -476,7 +484,7 @@ body {
                 padding: 0 10px;
                 cursor: pointer;
                 color: $FontColor;
-                background-color: #CCC0B6;
+                background-color: $SecondaryColor;
                 user-select: none;
                 width: 40px;
                 border-width: 0.5px;
@@ -486,7 +494,7 @@ body {
                 background-color: #dccec2;
             }
           }
-          .add-to-cart{
+          .primary-btn{
             background-color: $FontColor;
             padding: 15px 40px;
             font-size: 20px;
@@ -494,12 +502,12 @@ body {
             cursor: pointer;
             font-family: comfortaa;
             font-weight: 600;
-            color: #CCC0B6;
+            color: $SecondaryColor;
             border-radius: 5px;
             margin-bottom: 20px;
           }
         
-        .add-to-cart:hover{
+        .primary-btn:hover{
             opacity: 0.8;
           }
       }
@@ -624,3 +632,41 @@ body {
    }
   }  
 }
+
+//CONTACT US
+.contact-section{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+  color: $FontColor;
+  .container{
+   text-align: center;
+  width: max-content;
+  }
+  .heading{
+    p{
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  }
+  .form-input{
+    text-align: initial;
+    .input-group{
+      margin-bottom: 20px;
+      label{
+        display: block;
+        margin-bottom: 10px;
+      }
+      input{
+        font-family: $Font;
+        width: 50%;
+      }
+    }
+    .primary-btn{
+      font-family: $Font;
+      color: $FontColor;
+    }
+  }
+}
+

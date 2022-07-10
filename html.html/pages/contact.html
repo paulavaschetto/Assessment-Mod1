@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Inter:wght@100;200&family=Koulen&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9f1265a69a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="topnav">
+    <a href="../index.html">
+      <img class="logo" src="../Images/logowhitetransp.png" alt="logo" >
+      </a>
+      
+     <div id="menuLinks">
+        <a href="../pages/coffees.html">Coffees</a>
+        <a href="../pages/empanadas.html">Empanadas</a>
+        <a href="../pages/deals.html">Deals</a>
+        <a href="../pages/contact.html">Contact Us</a>
+        <a href="../pages/about.html">About Us</a>
+     </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i></a>
+
+      <a href="./your_bag.html" class="bag_icon"><i class="fa-solid fa-bag-shopping"></i></a>
+
+  </div>
+   
+
+<div id="bc"><a href="../index.html">Home</a> > Contact Us</div>  
+
+<div class="contact-section">
+    <div class="container">
+        <div class="heading">
+            <p>Come see us in Riverside Market, chch CBD
+                <h3>
+                Opening hours:
+                <br> 
+                Mon - Fri: 7:00 AM – 3:00 PM 
+                <br>
+                Sat & Sun: Closed
+                </h3>
+                You can  also phone us on 0210000 or leave us message below:
+            </p>
+        </div>
+    
+        <form class="form-input" method="post" action="contact-form-process.php">
+            
+            <div class="input-group">
+                <label for="Name" class="label">Full name*</label>
+                <input type="text" name="Name" required>
+            </div>
+    
+            <div class="fcf-form-group">
+                <label for="Email" class="label">Email address*</label>
+                <div class="fcf-input-group">
+                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <label for="Message" class="label">Message*</label>
+                <div class="fcf-input-group">
+                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                </div>
+            </div>
+    
+            
+                <button type="submit" class="primary-btn">SEND</button>
+          
+    
+        </form>  
+    </div>
+   
+</div>
+
+<script src="../../js/index.js"></script>
+</body>
+
+</html>

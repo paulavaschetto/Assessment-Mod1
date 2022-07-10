@@ -58,10 +58,11 @@ body {
 #bc {
   font-size: 12px;
   padding: 8px 10px;
+  color: #371E08;
 }
-
 #bc a {
   text-decoration: none;
+  color: #371E08;
 }
 
 /* HOME PAGE */
@@ -203,7 +204,7 @@ body {
 .content-section .product-card .counter button:hover {
   background-color: #dccec2;
 }
-.content-section .product-card .add-to-cart {
+.content-section .product-card .primary-btn {
   background-color: #371E08;
   padding: 15px 40px;
   font-size: 20px;
@@ -215,7 +216,11 @@ body {
   border-radius: 5px;
   margin-bottom: 20px;
 }
-.content-section .product-card .add-to-cart:hover {
+.content-section .product-card .primary-btn a {
+  text-decoration: none;
+  color: #CCC0B6;
+}
+.content-section .product-card .primary-btn:hover {
   opacity: 0.8;
 }
 
@@ -334,7 +339,7 @@ hr {
   margin-right: 60px;
 }
 .total-to-pay .total-number {
-  margin-left: 30vw;
+  margin-left: 25%;
 }
 
 .terms {
@@ -448,7 +453,7 @@ hr {
 .promo-section .promo-card .heading .dropdown-flavor .counter-deals button:hover {
   background-color: #dccec2;
 }
-.promo-section .promo-card .heading .add-to-cart {
+.promo-section .promo-card .heading .primary-btn {
   background-color: #371E08;
   padding: 15px 40px;
   font-size: 20px;
@@ -460,7 +465,7 @@ hr {
   border-radius: 5px;
   margin-bottom: 20px;
 }
-.promo-section .promo-card .heading .add-to-cart:hover {
+.promo-section .promo-card .heading .primary-btn:hover {
   opacity: 0.8;
 }
 
@@ -564,6 +569,39 @@ hr {
     margin-right: 35px;
     margin-top: 0;
   }
+}
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+  color: #371E08;
+}
+.contact-section .container {
+  text-align: center;
+  width: max-content;
+}
+.contact-section .heading p {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.contact-section .form-input {
+  text-align: initial;
+}
+.contact-section .form-input .input-group {
+  margin-bottom: 20px;
+}
+.contact-section .form-input .input-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+.contact-section .form-input .input-group input {
+  font-family: "comforta";
+  width: 50%;
+}
+.contact-section .form-input .primary-btn {
+  font-family: "comforta";
+  color: #371E08;
 }
 
 /*# sourceMappingURL=style.css.map */
