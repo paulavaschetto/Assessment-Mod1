@@ -7,23 +7,20 @@ body {
   margin: 0;
 }
 
-.logo {
-  width: 50px;
-  height: 50px;
-}
-
-/* Style the navigation menu */
 #topnav {
   overflow: hidden;
   background-color: #543910;
 }
-
-/* Hide the links inside the navigation menu (except for logo/home) */
 #topnav #menuLinks {
   display: none;
 }
-
-/* Style navigation menu links */
+#topnav #menuLinks a:hover {
+  background-color: rgba(65, 41, 5, 0.8156862745);
+}
+#topnav .logo {
+  width: 50px;
+  height: 50px;
+}
 #topnav a {
   color: #F6EDE5;
   padding: 14px 16px;
@@ -31,28 +28,20 @@ body {
   font-size: 17px;
   display: block;
 }
-
-/* Style the hamburger menu */
-#topnav a.icon {
+#topnav .icon {
   display: block;
   position: absolute;
   right: 50px;
   top: 0;
   font-size: 30px;
-  align-items: center;
+  margin-top: 10px;
 }
-
-#topnav a.bag_icon {
+#topnav .bag_icon {
   position: absolute;
-  float: right;
-  margin: auto;
+  margin-top: 10px;
   top: -1px;
   right: 2px;
   font-size: 28px;
-}
-
-#menuLinks a:hover, #topnav a.bag_icon:hover, #topnav a.icon {
-  background-color: rgba(65, 41, 5, 0.8156862745);
 }
 
 #bc {
@@ -65,15 +54,13 @@ body {
   color: #371E08;
 }
 
-/* HOME PAGE */
 .container {
   position: relative;
   margin: auto;
   width: 60%;
   text-align: center;
 }
-
-.categories {
+.container .categories {
   text-decoration: none;
   font-size: 4vw;
   display: flex;
@@ -84,8 +71,7 @@ body {
   overflow: hidden;
   margin-bottom: 30px;
 }
-
-.categoryTitle {
+.container .categories .categoryTitle {
   position: relative;
   background-color: rgba(84, 57, 16, 0.6823529412);
   color: #F6EDE5;
@@ -93,7 +79,6 @@ body {
   z-index: 1;
   padding: 0 20px;
 }
-
 .container .categories img {
   width: 100%;
   object-fit: cover;
@@ -138,7 +123,6 @@ body {
   text-align: center;
   margin: 20px 15px;
   flex: 1 0 40%;
-  /* Dropdown button on hover & focus */
 }
 .content-section .product-card img {
   width: 100%;
@@ -166,7 +150,7 @@ body {
   cursor: pointer;
   font-family: "comfortaa";
   border-radius: 5px;
-  width: 70%;
+  width: 50%;
 }
 .content-section .product-card .dropbtn:hover, .content-section .product-card .dropbtn:focus {
   background-color: #dccec2;
@@ -243,7 +227,6 @@ body {
     height: 5vh;
   }
 }
-/* YOUR BAG PAGE */
 .cart-row {
   display: flex;
   margin: auto;
@@ -291,6 +274,7 @@ body {
   outline: 0;
 }
 .cart-row .amend-qty .counter-check button {
+  display: block;
   font-size: 30px;
   padding: 0 10px;
   cursor: pointer;
@@ -351,14 +335,17 @@ hr {
 }
 
 .check-out-btn {
-  text-align: center;
   background-color: #371E08;
   padding: 15px 40px;
   font-size: 20px;
   border: none;
+  cursor: pointer;
   font-family: "comfortaa";
   font-weight: 600;
+  color: #CCC0B6;
   border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
   margin-top: 35px;
 }
 .check-out-btn a {
@@ -371,8 +358,32 @@ hr {
 }
 
 @media screen and (max-width: 480px) {
+  .cart-row .description {
+    margin: 10px 0px;
+  }
+  .cart-row .description .title h2, .cart-row .description .title h3 {
+    font-size: 20px;
+  }
+  .cart-row .description h4 {
+    margin: 10px 0px;
+  }
+  .cart-row .description .amend-qty .delete-btn {
+    margin-left: 50px;
+    margin-right: 10px;
+  }
+  .cart-row .description .amount .subtotal {
+    margin-right: 65px;
+  }
   hr {
     width: 90%;
+  }
+  .total-to-pay {
+    font-size: 25px;
+  }
+  .terms .check-out-btn {
+    padding: 10px 30px;
+    font-size: 15px;
+    margin-bottom: 10px;
   }
 }
 .promo-section {
@@ -415,12 +426,15 @@ hr {
   background-color: #CCC0B6;
   color: #371E08;
   padding: 16px;
-  margin: 10px 25px;
   font-size: 15px;
   border-color: #948578;
   cursor: pointer;
   font-family: "comfortaa";
   border-radius: 5px;
+  margin: 10px 25px;
+}
+.promo-section .promo-card .heading .dropdown-flavor .dropbtn-deals:hover, .promo-section .promo-card .heading .dropdown-flavor .dropbtn-deals:focus {
+  background-color: #dccec2;
 }
 .promo-section .promo-card .heading .dropdown-flavor .counter-deals {
   display: flex;
@@ -464,6 +478,10 @@ hr {
   color: #CCC0B6;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+.promo-section .promo-card .heading .primary-btn a {
+  text-decoration: none;
+  color: #CCC0B6;
 }
 .promo-section .promo-card .heading .primary-btn:hover {
   opacity: 0.8;
@@ -592,11 +610,14 @@ hr {
 .contact-section .container-contact .wording h2 {
   line-height: 35px;
 }
-.contact-section .container-contact .wording a {
+.contact-section .container-contact .wording .sm-icons {
+  margin-top: 40px;
+}
+.contact-section .container-contact .wording .sm-icons a {
   color: #371E08;
   text-decoration: none;
   font-size: 40px;
-  margin: 10px 10px;
+  margin: 0px 15px;
 }
 .contact-section .container-contact .form-sect {
   text-align: initial;
@@ -633,6 +654,10 @@ hr {
   color: #CCC0B6;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+.contact-section .container-contact .form-sect .submit .primary-btn a {
+  text-decoration: none;
+  color: #CCC0B6;
 }
 .contact-section .container-contact .form-sect .submit .primary-btn:hover {
   opacity: 0.8;
@@ -681,7 +706,7 @@ hr {
   padding-top: 15px;
 }
 .checkout-section .container-checkout .order-check .time {
-  margin-right: 45px;
+  margin-right: 48px;
 }
 .checkout-section .container-checkout .order-check .dropbtn {
   background-color: #CCC0B6;
@@ -737,6 +762,7 @@ hr {
 }
 .checkout-section .container-checkout .payment .confirmation .primary-btn {
   background-color: #371E08;
+  background-color: #371E08;
   padding: 15px 40px;
   font-size: 20px;
   border: none;
@@ -746,6 +772,10 @@ hr {
   color: #CCC0B6;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+.checkout-section .container-checkout .payment .confirmation .primary-btn a {
+  text-decoration: none;
+  color: #CCC0B6;
 }
 .checkout-section .container-checkout .payment .confirmation .primary-btn:hover {
   opacity: 0.8;
@@ -763,7 +793,7 @@ hr {
     font-size: 15px;
   }
   .checkout-section .container-checkout .order-check .time {
-    margin-right: 30px;
+    margin-right: 42px;
   }
   .checkout-section .container-checkout .order-check .dropbtn {
     font-size: 12px;

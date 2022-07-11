@@ -1,8 +1,65 @@
 $FontColor: #371E08;
 $SecondaryColor: #CCC0B6;
 $Font:"comfortaa";
-
-body {
+@mixin mainDropBtn(){
+    background-color: $SecondaryColor;
+    color: $FontColor;
+    padding: 16px;
+    font-size: 15px;
+    border-color:#948578;
+    cursor: pointer;
+    font-family: $Font;
+    border-radius: 5px; 
+  }
+@mixin mainDropBtnHover {
+  background-color: #dccec2;
+}
+@mixin counterNum {
+  width: 40px;
+  border: 0;
+  line-height: 20px;
+  font-size: 25px;
+  text-align: center;
+  background: transparent;
+  color: $FontColor;
+  appearance: none;
+  outline: 0;
+}
+@mixin counterBtn {
+  display: block;
+  font-size: 30px;
+  padding: 0 10px;
+  cursor: pointer;
+  color: $FontColor;
+  background-color: $SecondaryColor;
+  user-select: none;
+  width: 40px;
+  border-width: 0.5px;
+  border-color:#948578;
+}
+@mixin primaryBtn {
+    background-color: $FontColor;
+    padding: 15px 40px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: $Font;
+    font-weight: 600;
+    color: $SecondaryColor;
+    border-radius: 5px;
+    margin-bottom: 20px;
+      a{
+        text-decoration: none;
+        color: $SecondaryColor;
+      }
+}
+@mixin mediaPrimaryBtn {
+  padding: 10px 30px;
+      font-size: 15px;
+      margin-bottom: 10px;
+}
+  
+body{
     background: linear-gradient(to top left, #ab8960, transparent);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -10,80 +67,59 @@ body {
     font-family: $Font;
     margin: 0;
 }
-
-.logo{
+#topnav{
+  overflow: hidden;
+  background-color: #543910;
+  #menuLinks{
+    display: none;
+    a:hover{
+      background-color:#412905d0;
+    }
+  }
+  .logo{
     width: 50px;
     height: 50px;
-}
-
-
-
-/* Style the navigation menu */
-#topnav {
-    overflow: hidden;
-    background-color: #543910;
-    // position: relative;
-    
   }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  #topnav #menuLinks {
-    display: none;
-  }
-  
-  /* Style navigation menu links */
-  #topnav a {
+  a{
     color: #F6EDE5;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
   }
-  
-  /* Style the hamburger menu */
-  #topnav a.icon {
+  .icon {
     display: block;
     position: absolute;
     right: 50px;
     top: 0;
     font-size: 30px;
-    align-items: center;
-}
-  
-  #topnav a.bag_icon{ 
+    margin-top: 10px;
+  }
+  .bag_icon{ 
     position: absolute;
-    float: right;
-    margin: auto;
+    margin-top: 10px;
     top: -1px;
     right: 2px;
-    font-size: 28px;
+    font-size: 28px;  
   }
-
-  #menuLinks a:hover, #topnav a.bag_icon:hover, #topnav a.icon{
-   background-color:#412905d0;
+}
+#bc{
+  font-size: 12px;
+  padding: 8px 10px;
+  color: $FontColor;
+  a{
+  text-decoration: none;
+  color: $FontColor;
   }
-
-  #bc {
-    font-size: 12px;
-    padding: 8px 10px;
-    color: $FontColor;
-    a{
-    text-decoration: none;
-    color: $FontColor;
-    }
-  }
-
+}
  
-/* HOME PAGE */
-
+//HOME PAGE
 .container{
-    position: relative;
-    margin: auto;
-    width: 60%;
-    text-align: center;
-  }
-
-.categories{
+  position: relative;
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  .categories{
     text-decoration: none;
     font-size: 4vw;
     display: flex;
@@ -93,59 +129,53 @@ body {
     min-height: 400px;
     overflow: hidden;
     margin-bottom: 30px;
-}
-    
-
-.categoryTitle{
-    position: relative;
-    background-color: #543910ae;
-    color: #F6EDE5;
-    margin: auto;
-    z-index: 1;
-    padding: 0 20px;
-}
-
-
-.container .categories img{
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 0;
-    height: 100%;
+    .categoryTitle{
+      position: relative;
+      background-color: #543910ae;
+      color: #F6EDE5;
+      margin: auto;
+      z-index: 1;
+      padding: 0 20px;
+    }
+    img{
+      width: 100%;
+      object-fit: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0;
+      height: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: 800px){
-    .categories{
-        height: 30vh;
-        font-size: 15px;
-        min-height: 150px;
-    }
-    .container{
-        width: 90%;
-    }
-    .container .categories img{
-        min-height: 200px;
-    }
+  .categories{
+    height: 30vh;
+    font-size: 15px;
+    min-height: 150px;
+  }
+  .container{
+    width: 90%;
+  }
+  .container .categories img{
+    min-height: 200px;
+  }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 600px) {
-    .categories{
-        font-size: 30px;
-    }
-    .categoryTitle{
-        width: 50%;
-    }
+  .categories{
+    font-size: 30px;
+  }
+  .categoryTitle{
+    width: 50%;
+  }
 }
 
-
 /* COFFEE MENU PAGE */
-
 .content-section{
   display: flex;
   flex-wrap: wrap;
-  
   .product-card{
     width: 30%;
     border: $FontColor;
@@ -171,90 +201,38 @@ body {
       margin-bottom: 32px;
       margin-top: 22px;
     }
-  
-  .dropbtn{
-      background-color: $SecondaryColor;
-      color: $FontColor;
-      padding: 16px;
-      font-size: 15px;
-      border-color:#948578;
-      cursor: pointer;
-      font-family: $Font;
-      border-radius: 5px; 
-      width:70%;
+    .dropbtn{
+      @include mainDropBtn();
+      width: 50%;
     }
-
-  
-    /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus{
-      background-color: #dccec2;
+    .dropbtn:hover, .dropbtn:focus{
+      @include mainDropBtnHover();
     }
-  
-   
-  .counter{
+    .counter{
       width: 100%;
       margin: 20px auto;
       display: flex;
       align-items: center;
       justify-content: center;
-  }
-  .counter h2{
-      width: 40px;
-      border: 0;
-      line-height: 20px;
-      font-size: 25px;
-      text-align: center;
-      background: transparent;
-      color: $FontColor;
-      appearance: none;
-      outline: 0;
-  }
-  .counter button{
-      display: block;
-      font-size: 30px;
-      padding: 0 10px;
-      cursor: pointer;
-      color: $FontColor;
-      background-color: $SecondaryColor;
-      user-select: none;
-      width: 40px;
-      border-width: 0.5px;
-      border-color:#948578;
-  }
-  
-  .counter button:hover{
-      background-color: #dccec2;
     }
-  
+    .counter h2{
+      @include counterNum();
+    }
+    .counter button{
+      @include counterBtn();
+    }
+    .counter button:hover{
+      @include mainDropBtnHover();
+    }
     .primary-btn{
-      background-color: $FontColor;
-      padding: 15px 40px;
-      font-size: 20px;
-      border: none;
-      cursor: pointer;
-      font-family: $Font;
-      font-weight: 600;
-      color: $SecondaryColor;
-      border-radius: 5px;
-      margin-bottom: 20px;
-      
-      a{
-        text-decoration: none;
-        color: $SecondaryColor;
-      }
-  }
-  
-  .primary-btn:hover{
-      opacity: 0.8;
+      @include primaryBtn();
     }
-  
+    .primary-btn:hover{
+        opacity: 0.8;
+    }
   }
-
-
 }
 
-
-  
 @media screen and (max-width: 480px){
   .content-section{
     .product-card {
@@ -267,18 +245,16 @@ body {
       p{
         font-size: 10px;
       }
-     .dropbtn{
-        width: 38vw;
-        font-size: 7px;
-        height: 5vh;
-    }
+      .dropbtn{
+          width: 38vw;
+          font-size: 7px;
+          height: 5vh;
+      }
     }
   } 
 }
     
-
-/* YOUR BAG PAGE */
-   
+//YOUR BAG PAGE
 .cart-row {
   display: flex;
   margin: auto;
@@ -286,13 +262,12 @@ body {
   background-color: #F6EDE5;   
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 15px;
-
   img{
     width: 20vw;
     margin: 10px;
     object-fit: cover;
   }
-  .description {
+  .description{
     color: $FontColor;
     margin: 10px 20px;
     .title{
@@ -307,118 +282,115 @@ body {
       margin-bottom: 15px;
     }
   }
-    .amend-qty {
-      display: flex;  
-      flex-direction: row;
-      margin-bottom: 15px;
-
-      .counter-check{
-        display: flex;
-        align-items: center;
+  .amend-qty{
+    display: flex;  
+    flex-direction: row;
+    margin-bottom: 15px;
+    .counter-check{
+      display: flex;
+      align-items: center;
+    }
+      .counter-check h2{
+        @include counterNum();
       }
-    
-        .counter-check h2{
-          width: 40px;
-          border: 0;
-          line-height: 20px;
-          font-size: 25px;
-          text-align: center;
-          background: transparent;
-          color: $FontColor;
-          appearance: none;
-          outline: 0;
-        }
-          .counter-check button{
-            font-size: 30px;
-            padding: 0 10px;
-            cursor: pointer;
-            color: $FontColor;
-            background-color: $SecondaryColor;
-            user-select: none;
-            width: 40px;
-            border-width: 0.5px;
-            border-color:#948578;
-          }
-    
-          .delete-btn{
-            Cursor: pointer;
-            font-size: 30px;
-            color: $FontColor;
-            margin-left: 65px;
-            border: none;
-            background-color: transparent;
-            }
-    }
-    .amount {   
-        color: $FontColor;
-        h3{
-          display: inline;
-        }
-        .subtotal {
-           margin-right: 80px;
-        }
-        }      
-    }
-
-    hr {
-      background-color: $FontColor;
-      color: $FontColor;
-      height: 2px;
-      width: 55VW;
-     }
-  
-    .total-to-pay{
-      color: $FontColor;
-      text-align: center;
+      .counter-check button{
+        @include counterBtn();
+      }
+    .delete-btn{
+      Cursor: pointer;
       font-size: 30px;
-      margin-top: 25px;
-      p{
-        display: inline;
-       
-      }
-      .total{
-        margin-right: 60px;
-      }
-      .total-number{
-        margin-left: 25%;
-      }
+      color: $FontColor;
+      margin-left: 65px;
+      border: none;
+      background-color: transparent;
     }
-
-  .terms{
-    text-align: center;
-    color: $FontColor;
-    font-size: 20px;
-    margin-top: 35px;
-    margin-bottom: 35px;
   }
-   .check-out-btn{
-    text-align: center;
-    background-color: $FontColor;
-    padding: 15px 40px;
-    font-size: 20px;
-    border: none;
-    font-family: $Font;
-    font-weight: 600;
-    border-radius: 5px;
-    margin-top: 35px;
-    a{
-    text-decoration: none;
-    color: $SecondaryColor;
-   }
+  .amount{   
+    color: $FontColor;
+    h3{
+      display: inline;
+    }
+    .subtotal {
+        margin-right: 80px;
+    }
+  }      
+}
+hr {
+  background-color: $FontColor;
+  color: $FontColor;
+  height: 2px;
+  width: 55VW;
+}
+.total-to-pay{
+  color: $FontColor;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 25px;
+  p{
+    display: inline;
+  }
+  .total{
+    margin-right: 60px;
+  }
+  .total-number{
+    margin-left: 25%;
+  }
+}
+.terms{
+  text-align: center;
+  color: $FontColor;
+  font-size: 20px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.check-out-btn{
+  @include primaryBtn();
+  text-align: center;
+  margin-top: 35px;
+} 
+.check-out-btn:hover{
+  opacity: 0.8;
 }
 
-.check-out-btn:hover{
-   opacity: 0.8;
- }
-
-   @media screen and (max-width: 480px){
-    hr{
-      width: 90%;
+@media screen and (max-width: 480px){
+  .cart-row{
+    .description{
+      margin: 10px 0px;
+      .title{
+        h2, h3{
+          font-size: 20px;
+        }
+      }
+      h4{
+        margin: 10px 0px;
+      } 
+      .amend-qty{
+        .delete-btn{
+          margin-left: 50px;
+          margin-right: 10px;
+        }
+      }
+      .amount{
+        .subtotal{
+          margin-right: 65px;
+        }
+      } 
     }
-   }
+  }
+  hr{
+    width: 90%;
+  }
+  .total-to-pay{
+    font-size: 25px;
+  }
+  .terms{
+    .check-out-btn{
+      @include mediaPrimaryBtn();
+    }
+  }
+}
 
-  //  DEALS PAGE
-
+  //DEALS PAGE
   .promo-section{
     display: flex;
     flex-wrap: wrap;
@@ -452,15 +424,11 @@ body {
             margin-bottom: 32px;
             margin-top: 22px;
             .dropbtn-deals {
-              background-color: $SecondaryColor;
-              color: $FontColor;
-              padding: 16px;
+             @include mainDropBtn(); 
               margin: 10px 25px;
-              font-size: 15px;
-              border-color:#948578;
-              cursor: pointer;
-              font-family: $Font;
-              border-radius: 5px; 
+            }
+            .dropbtn-deals:hover, .dropbtn-deals:focus{
+              @include mainDropBtnHover();
             }
             .counter-deals{
               display: flex;
@@ -468,46 +436,19 @@ body {
               justify-content: center;
             }
             .counter-deals h2{
-                width: 40px;
-                border: 0;
-                line-height: 20px;
-                font-size: 25px;
-                text-align: center;
-                background: transparent;
-                color: $FontColor;
-                appearance: none;
-                outline: 0;
+              @include counterNum();
             }
             .counter-deals button{
-                display: block;
-                font-size: 30px;
-                padding: 0 10px;
-                cursor: pointer;
-                color: $FontColor;
-                background-color: $SecondaryColor;
-                user-select: none;
-                width: 40px;
-                border-width: 0.5px;
-                border-color:#948578;
+              @include counterBtn();
             }
             .counter-deals button:hover{
-                background-color: #dccec2;
+              @include mainDropBtnHover();
             }
           }
           .primary-btn{
-            background-color: $FontColor;
-            padding: 15px 40px;
-            font-size: 20px;
-            border: none;
-            cursor: pointer;
-            font-family: $Font;
-            font-weight: 600;
-            color: $SecondaryColor;
-            border-radius: 5px;
-            margin-bottom: 20px;
+            @include primaryBtn();
           }
-        
-        .primary-btn:hover{
+          .primary-btn:hover{
             opacity: 0.8;
           }
       }
@@ -545,8 +486,7 @@ body {
   }  
 
 
-// ABOUT US PAGE
-
+//ABOUT US PAGE
 .about-section{
   width: 70%;
   margin: auto;
@@ -653,11 +593,14 @@ body {
       h2{
         line-height: 35px;
       }
-      a {
-        color: $FontColor;
-        text-decoration: none;
-        font-size: 40px;
-        margin: 10px 10px;
+      .sm-icons{
+        margin-top: 40px;
+        a {
+          color: $FontColor;
+          text-decoration: none;
+          font-size: 40px;
+          margin: 0px 15px;
+        }
       }
     }
     .form-sect{
@@ -683,58 +626,47 @@ body {
       .submit{
         text-align: center;
         .primary-btn{
-          background-color: $FontColor;
-          padding: 15px 40px;
-          font-size: 20px;
-          border: none;
-          cursor: pointer;
-          font-family: $Font;
-          font-weight: 600;
-          color: $SecondaryColor;
-          border-radius: 5px;
-          margin-bottom: 20px;
+          @include primaryBtn();
         }
         .primary-btn:hover{
           opacity: 0.8;
-          }
+        }
       }
     }
   }
 }
 
 @media screen and (max-width: 480px){
- .contact-section{
-  .container-contact{
-      .wording{
-        margin-bottom: 25px;
-          p{
-            font-size: 12px;
-            margin-bottom: 20px;
+  .contact-section{
+    .container-contact{
+        .wording{
+          margin-bottom: 25px;
+            p{
+              font-size: 12px;
+              margin-bottom: 20px;
+            }
+            h2{
+            font-size: 15px;
+            line-height: 22px;
+            }
+        }
+        .form-sect{
+          .input-group{
+            .label{
+              font-size: 12px;
+            }
           }
-          h2{
-          font-size: 15px;
-          line-height: 22px;
-          }
-      }
-      .form-sect{
-        .input-group{
-          .label{
-            font-size: 12px;
+        .submit{
+          .primary-btn{
+           @include mediaPrimaryBtn();
           }
         }
-       .submit{
-        .primary-btn{
-          padding: 10px 30px;
-          font-size: 15px;
-          margin-bottom: 10px;
-        }
-       }
       }
+    }
   }
- }
 }
-//CHECK OUT PAGE
 
+//CHECK OUT PAGE
 .checkout-section{
   display: flex;
   flex-wrap: wrap;
@@ -754,20 +686,13 @@ body {
         padding-top: 15px;
       }
       .time{
-        margin-right: 45px;
+        margin-right: 48px;
       }
       .dropbtn{
-        background-color: $SecondaryColor;
-        color: $FontColor;
-        padding: 16px;
-        font-size: 15px;
-        border-color:#948578;
-        cursor: pointer;
-        font-family: $Font;
-        border-radius: 5px; 
+        @include mainDropBtn();
       }
       .dropbtn:hover, .dropbtn:focus{
-          background-color: #dccec2;
+         @include mainDropBtnHover();
       }
     }
     .payment{
@@ -809,19 +734,11 @@ body {
         }
         .primary-btn{
             background-color: $FontColor;
-            padding: 15px 40px;
-            font-size: 20px;
-            border: none;
-            cursor: pointer;
-            font-family: $Font;
-            font-weight: 600;
-            color: $SecondaryColor;
-            border-radius: 5px;
-            margin-bottom: 20px;
+            @include primaryBtn();
           }
         .primary-btn:hover{
             opacity: 0.8;
-          }
+        }
       }
     }
   }
@@ -838,7 +755,7 @@ body {
         font-size: 15px;
         }
         .time{
-        margin-right: 30px;
+        margin-right: 42px;
         }
         .dropbtn{
         font-size: 12px;
@@ -862,16 +779,11 @@ body {
         }
         .confirmation{
           .primary-btn{
-            padding: 10px 30px;
-            font-size: 15px;
-            margin-bottom: 10px;
+            @include mediaPrimaryBtn();
           }
         }
-      }
-      
-      
+      } 
     }
-   
   }
 }
 
