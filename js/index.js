@@ -1,3 +1,4 @@
+// collapsible menu
 function openMenu() {
     var x = document.getElementById("menuLinks");
     if (x.style.display === "block") {
@@ -6,9 +7,7 @@ function openMenu() {
       x.style.display = "block";
     }
   }
-
-
-    
+// counter
     var data = 0;
    
     document.getElementById("counting").innerText = data;
