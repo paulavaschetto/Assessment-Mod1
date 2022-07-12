@@ -58,7 +58,14 @@ $Font:"comfortaa";
       font-size: 15px;
       margin-bottom: 10px;
 }
-  
+@mixin orderStatus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+  line-height: 50px;
+}  
 body{
     background: linear-gradient(to top left, #ab8960, transparent);
     background-repeat: no-repeat;
@@ -172,25 +179,31 @@ body{
   }
 }
 
-/* COFFEE MENU PAGE */
+// /COFFEE MENU PAGE
 .content-section{
   display: flex;
   flex-wrap: wrap;
   .product-card{
-    width: 30%;
     border: $FontColor;
     border-width: 0.5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;  
-    margin: 20px 15px;
+    margin: 20px 30px;
     flex: 1 0 40%;
     img{
       width: 100%;
       object-fit: cover;
       max-height: 210px;
     }
+    h1{
+      color: $FontColor;
+    }
     p{
+      color: $FontColor;
       font-size: 20px;
+    }
+    h2{
+      color: $FontColor;
     }
     .dropdown{
       display: block;
@@ -787,4 +800,71 @@ hr {
   }
 }
 
+// CONFIRMATION PAGE
+#topnav{
+  .only-icon{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    font-size: 30px;
+    margin-top: 10px;;
+  }
+}
+
+.progress-section{
+  color: $FontColor;
+  .in-progress, .order-ready{
+    @include orderStatus();
+    i{
+      font-size: 50px;
+      margin-right: 30px;
+    }
+  } 
+  .bars-icon{
+    width: fit-content;
+    margin: auto;
+    .fa-bars-progress{
+      font-size: 50px;
+    }
+  }
+  .order-ready{
+    opacity: 60%;
+  }
+  .return{
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    a{
+      color: $FontColor;
+      text-decoration: none;
+    }
+    a:hover{
+      color: $SecondaryColor;
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  .progress-section{
+    .in-progress, .order-ready{
+      h1{
+        font-size: 15px;
+        line-height: normal;
+      }
+      i{
+        font-size: 30px;
+        margin-right: 15px;
+      }
+    }
+    .bars-icon{
+      .fa-bars-progress{
+        font-size: 30px;
+      }
+    }
+    .return{
+      font-size: small;
+    }
+  }
+}
   
